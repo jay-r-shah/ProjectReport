@@ -1,0 +1,172 @@
+\chapter{Sulfur Recovery}
+\thispagestyle{plain}
+The purpose of removing sulfur from acid gas streams is to reduce \ce{SO2} emissions in order to meet environmental guidelines. In the petroleum industry, acid gas streams from HDS plants contain \ce{H2S} which are sent to sulfur recovery units, where sulfur removal is carried out along with tail gas clean up schemes.
+
+%Hydrogen sulfide (\ce{H2S}) is present in the industrial world primarily as an undesirable byproduct of fossil fuel processing, including natural gas and petroleum. These produce unwanted combustion products and so must be removed either from the fuel or from the combustion products. In natural gas, \ce{H2S} is the primary sulfur component, along with lower levels of hydrocarbon sulfides (mercaptans).  The purpose of removing sulfur is to reduce \ce{SO2} emissions in order to meet environmental guidelines.
+
+\section{Claus Process} \label{sec:claus}
+The Claus process is the dominant sulfur recovery method from gaseous \ce{H2S}. The requirements to be met by Claus plants are dictated by the operating conditions of modern, flexible refineries and natural gas plants and increasingly stringent emission control norms.
+
+Acid gas streams from hydrodesulfurization containing \ce{H2S} are sent to a Claus unit. Gases with an \ce{H2S} content of over 25\% are suitable for the recovery of sulfur in the Claus process. Hydrogen sulfide produced in the hydrodesulfurization of refinery products is converted to sulfur in Claus plants \citep{Fahim2010377}. The main reaction is:
+\begin{center}
+2\ce{H2S} + \ce{O2} $\longrightarrow$ 2\ce{S} + 2\ce{H2O} \hspace{5em} $\Delta$H $= -$186.6 kJ/mol 
+\end{center}
+The Claus plant can be divided into two stages (Fig. \ref{fig:clauspfd}): thermal and catalytic. In the thermal stage, \ce{H2S} is partially oxidized at temperatures above 850\textcelsius{} in a combustion chamber. This causes elemental sulfur to precipitate in the downstream process gas cooler.
+
+If excess oxygen is added, the following reaction occurs:
+\begin{center}
+2\ce{H2S} + 3\ce{O2} $\longrightarrow$ 2\ce{SO2} + 2\ce{H2O} \hspace{5em} $\Delta$H $= -$518 kJ/mol 
+\end{center}
+Air to the acid gas is controlled such that around 30\% of the \ce{H2S} is converted to \ce{SO2}. %Sulfur precipitated in the process is obtained in the thermal process stage. 
+The main portion of the hot gas from the combustion chamber is cooled down. This causes the sulfur formed in the reaction step to condense.
+
+A small part of the hot gas from the combustion chamber goes to the catalytic stage. This gas contains 20--30\% of the sulfur content of the feed stream. Activated alumina or titanium dioxide is used. The \ce{H2S} reacts with the \ce{SO2} and results in gaseous, elemental sulfur. This is called the Claus reaction:
+\begin{center}
+2\ce{H2S} + \ce{SO2} $\longrightarrow$ 3\ce{S}(vapour) + 2\ce{H2O} \hspace{5em} $\Delta$H $= -$41.8 kJ/mol
+\end{center}
+
+\begin{figure}[t]
+\centering
+\fbox{\includegraphics[width=\linewidth]{Images/ClausPFD.png}}
+\caption{Claus process \citep{Fahim2010377}}
+\label{fig:clauspfd}
+\end{figure}
+Heating is provided to the catalyst bed to prevent sulfur condensation which can lead to fouling. Although the catalytic conversion is maximized at lower temperatures, care is taken to ensure that the operation takes place above the dew point of sulfur. The condensation heat is used to generate steam at the shell side of the condenser. Before storage, the liquid sulfur stream is degassed to remove any dissolved gases. Over 2.6 tons of steam can be generated per ton of sulfur yield.
+
+If the acid gas feed contains \ce{COS} and/or \ce{CS2} they are hydrolyzed in the catalytic reactor:
+\begin{center}
+\ce{COS} + \ce{H2O} $\rightleftarrows$ \ce{H2S} + \ce{CO2} \\
+\ce{CS2} + 2\ce{H2O} $\rightleftarrows$ 2\ce{H2S} + \ce{CO2}
+\end{center}
+The first converter typically operates at about 350\textcelsius{} in order to hydrolyze COS and \ce{CS2}. The second and subsequent converters usually operate just above the dew point of sulfur vapor. The Claus reaction is exothermic at converter temperatures, and the reaction equilibrium is favored by lower temperatures. However, COS and \ce{CS2} are hydrolyzed more completely at higher temperatures. The first catalytic converter is therefore frequently operated at temperatures high enough to promote the hydrolysis of COS and \ce{CS2}; the second and third converters are operated at temperatures only high enough to obtain acceptable reaction rates and to avoid the deposition of liquid sulfur.
+
+The tail gas from the Claus process still containing combustible components and sulfur compounds (\ce{H2S}, \ce{H2} and \ce{CO}) is either burned in an incineration unit or further desulfurized in a downstream tail gas clean-up unit (TGCU). A typical Claus process with two catalytic stages yields 97\% of the sulfur in the input stream. 
+
+\section{Catalysts \& reactors for the Claus process}
+Typically, a Sulfur Recovery Unit (SRU) is composed of a burner, a thermal reactor (TR), a waste heat boiler (WHB) (Fig. \ref{fig:whb}) and a train of sulfur condensers and catalytic Claus reactors. 
+
+\subsection{Thermal reactor and waste heat boiler}
+The acid gas, which consists of \ce{H2S}, \ce{H2O}, \ce{CO2}, CO, \ce{NH3} and hydrocarbons, is mixed with air and oxidized at high temperature by means of the burner and TR, which provides for the necessary residence time.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\includegraphics[width=\linewidth]{Images/WHB.png}}
+\caption{Layout of a typical SRU Waste heat boiler \citep{Manenti2012376}}
+\label{fig:whb}
+\end{figure}
+
+The TR is an axial-symmetric chamber internally lined by refractory to prevent overheating of vessel walls. The WHB is used for cooling the hot gas leaving the TR to an operating temperature suitable for sulfur condensation and catalytic oxidation. This boiler, directly connected to the TR, is of shell-and-tube type, with gas flowing on tube-side, and with boiling water on shell side. Either a kettle type boiler or a boiler-and-drum arrangement is used. A moderate slope towards outlet of tubes may be provided for draining possible liquid sulfur. Boiling water performs a rapid and effective removal of heat. Depending on acid gas composition, temperature of combusted gases in the TR is in a range of 1100 to 1400\textcelsius{}. At the boiler outlet the temperature is around 300\textcelsius{}. However, the cooling is not rapid enough to prevent recombination reactions such as \ce{H2} + 0.5\ce{H2S} $\leftrightharpoons$ \ce{H2S}. Such reactions are exothermic, therefore, they have an impact on boiler heat transfer surface, number and operating temperature of tubes. 
+
+\cite{Manenti2012376} have presented a model for the design of TR and WHB taking into account recombination reactions. The computational model was described for a monodimensional geometry and stationary conditions, and constituted of energy and chemical species conservation equations. The study showed that the TR and WHB can be considered a single plug flow reactor. The thermal reactor represents an adiabatic portion, whereas the boiler a non-adiabatic one.
+
+\nomenclature{SRU}{Sulfur Recovery Unit}%
+\nomenclature{WHB}{Waste Heat Boiler}%
+\nomenclature{TR}{Thermal Reactor}%
+
+\subsection{Catalytic converter}
+
+The unreacted acid gas from the TR has an \ce{H2S}:\ce{SO2} molar ratio of 2:1 \citep{ZareNezhad2008738}. \ce{H2S} and \ce{SO2} react further over an alumina catalyst in one or more subsequent catalytic converters according to the Claus reaction described in Section \ref{sec:claus}. Catalytic converters are usually designed for a flow at operating conditions of 28--56 m$^\text{3}$/h of process gas per cubic feet of catalyst bed (GHSV = 1000--2000 h$^{-\text{1}}$). Because of the pressure drop, this results in a bed depth of 1--1.5 meters. The catalyst is activated alumina and/or titania which is installed on the top of a 3--6 in thick layer of more dense support material.
+
+\nomenclature{GHSV}{Gas Hourly Space Velocity}
+
+\begin{figure}[htbp]
+\centering
+\fbox{\includegraphics[width=0.8\linewidth]{Images/ClausConverter.png}}
+\caption{Configuration of a Claus catalytic converter \citep{ZareNezhad2009143}}
+\label{fig:converter}
+\end{figure}
+
+The first converter must handle the hydrolysis of COS and \ce{CS2} which if not hydrolyzed will result in lower conversion efficiencies. A fuel gas fired reheater is used to run the first converter at a temperature sufficiently high to accomplish 90--95\% hydrolysis of COS and \ce{CS2}. This design criterion is also combined with having a
+\ce{TiO2} catalyst that in the bottom half of the catalyst bed at the first converter promotes hydrolysis reactions. Fig. \ref{fig:converter} shows the typical configuration of a Claus converter.
+
+Conventional activated alumina Claus catalysts have high activity for converting \ce{H2S} and \ce{SO2} to sulfur under most normal conditions. However, alumina has two serious limitations. The first is its limited ability to decompose COS and \ce{CS2}, and the second is the overall activity under severe sulfating conditions for even the \ce{H2S}/\ce{SO2} reaction. In these two situations, the use of titania catalyst is recognized as the better solution because of its ability to give high conversion of all the sulfur species to elemental sulfur, even under conditions when alumina is deactivated from sulfation. 
+
+\subsection{Catalysts}
+
+Two main types of catalysts are used in conventional Claus units: activated alumina (UOP product numbers S-201 and S-2001) and titania catalysts (UOP product number S-7001). They vary in their capability to hydrolyze COS and \ce{CS2} and to resist poisoning (sulfation). These Claus catalysts may be used alone or in combination in the beds depending upon performance requirements.
+
+The UOP S-201 catalyst (activated alumina) delivers excellent results when \ce{H2S} is the primary compound to be removed from the feed gas. S-2001 provides exceptional conversions of \ce{H2S}/\ce{SO2}, COS and \ce{CS2} due to its high macroporosity, high surface area, and thermal stability without sacrificing physical properties. S-2001 is also more effective for COS and \ce{CS2} conversion than S-201, and is therefore preferable for use in the first reactor of a typical Claus plant.
+
+The UOP S-7001, a titanium dioxide-based Claus catalyst, has a tailored pore structure that allows for high rates of diffusion of reactants and products. S-7001 is well suited for maximizing the conversion of COS and \ce{CS2} in the first converter. In the second and third converters, it is very beneficial due to its resistance to sulfur poisoning and longevity in maintaining high \ce{H2S}/\ce{SO2} conversion.
+
+The general classification of Claus sulfur recovery catalysts together with the different manufacturers are given below \citep{ZareNezhad2009143}:
+\begin{enumerate}
+\item Conventional alumina-based sulfur conversion catalyst used in natural gas plants, refineries and smelters having Claus process plants and other types of sulfur recovery plants: UOP, S-201; Axens, CR; ShanDong XunDa, A918.
+\item New generation catalyst for Claus units in natural gas processing plants, oil refineries, coke plants, and sub-dewpoint tail gas units such as MCRC (Mineral and Chemical Resource Co.), CBA (Cold Bed Adsorption) or Sulfreen. It provides high conversions of \ce{H2S}/\ce{SO2}, COS and \ce{CS2} due to its high macroporosity, high surface area, and thermal stability: UOP, S-2001; Axens, CR 3S; Almatis, DD431; ShanDong XunDa, A2000.
+\item Sulfation resistant sulfur recovery catalyst used in natural gas plants, refineries, and smelters having Claus process plants and other sulfur recovery plants. Also, used in first reactors for improved COS/\ce{CS2} conversion: UOP, S-501; Axens, CSM 31; ShanDong XunDa, A931.
+\item Promoted activated alumina that is used to scavenge oxygen in Claus reactors employing alumina catalyst. It is used as a top layer in Claus catalyst beds to protect the alumina catalyst bed beneath it from being poisoned by sulfation due to oxygen breakthrough: UOP, S-601; Axens, AM; ShanDong XunDa, A958.
+\item Specialty titania sulfur recovery catalyst for Claus units in natural gas processing plants, oil refineries, and coke plants. It is particularly suited for use in the first converter for the high conversion of COS and \ce{CS2}. This extra high COS/\ce{CS2} conversion is especially important for Claus plants that employ tail gas treating units that may not completely convert COS and \ce{CS2}, such as selective-oxidation units and sub-dewpoint systems: UOP, S-7001; Axens, CRS 31; ShanDong XunDa, A988.
+\item Top and bottom support in Claus catalyst beds and adsorption beds. The use of activated alumina support allows for cost saving compared to the use of inert support due to the lower bulk density of the activated alumina, and the activated alumina support provides some Claus catalytic activity or adsorption capacity: UOP, CBS; Axens, DR.
+\end{enumerate}
+
+There are various parameters which should be considered for final selection of a Claus catalyst. Typical chemical and physical properties of a suitable alumina Claus catalyst are given in Table \ref{tab:clauscatalyts} \citep{ZareNezhad2009143}.
+
+\begin{table}[htbp]
+\centering
+\caption{Chemical and physical properties of alumina Claus catalysts}
+\label{tab:clauscatalyts}
+\begin{tabular}{@{}ll@{}}
+\toprule
+{\bf Composition}                  & \begin{tabular}[c]{@{}l@{}}\ce{Al2O3} \textgreater 93 wt.\%, \ce{Na2O}: 0.3–0.5\\   wt\%, LOI (1000\textcelsius{}): 2–6 wt\%\end{tabular} \\ \midrule
+{\bf BET surface}                  & \textgreater 325 m$^\text{2}$/g                                                                                                         \\ \midrule
+{\bf Particle size}                & 1/8–1/4 in. (usually 3/16 in. ~5 mm)                                                                                        \\ \midrule
+{\bf Mean pore size}               & 40--90 \AA                                                                                                                  \\ \midrule
+{\bf Total pore volume}            & \textgreater 0.50 mL/g                                                                                                                  \\ \midrule
+{\bf Macroporosity (\textgreater 750 \AA)}     & \textgreater 0.15 mL/g                                                                                                                  \\ \midrule
+{\bf Mechanical strength (5 mesh)} & \textgreater 140 N/cm                                                                                                                   \\ \midrule
+{\bf Bulk density}                 & \textless 641 kg/m$^\text{3}$                                                                                                        \\ \midrule
+{\bf Attrition loss}               & \textless 0.4 wt.\%                                                                                                                  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\nomenclature{LOI}{Loss on Ignition}%
+
+With more stringent regulations, the concentration of residual sulfur compounds in the tail gas from a Claus plant is still unacceptable. Developments such as the SuperClaus process (Section \ref{sec:superclaus})  and the SCOT process (Section \ref{sec:SCOT}) have resulted in sulfur recoveries of nearly 100\%.
+
+\section{SUPERCLAUS process} \label{sec:superclaus}
+
+The SUPERCLAUS process was developed to catalytically recover elemental sulfur from \ce{H2S} containing Claus tail gases to improve overall sulfur recovery level of a sulfur recovery facility. The process was commercially demonstrated in 1988, and today more than 160 units are under license and over 140 are in operation.
+
+The process is based on a proprietary catalyst for the selective oxidation of \ce{H2S} to elemental sulfur in the last reactor stage according to the following reaction:
+\begin{center}
+\ce{H2S} + $\frac{\text{1}}{\text{2}}$\ce{O2} $\longrightarrow$ $\frac{\text{1}}{\text{n}}\text{S}_{\text{n}}$ + \ce{H2O}
+\end{center}
+The reaction is thermodynamically complete and high conversion of \ce{H2S} to elemental sulfur can be obtained \citep{VANNISSELROOYA1993263}.
+
+In the SUPERCLAUS process (Fig. \ref{fig:superclaus}) the conventional \ce{H2S}:\ce{SO2} = 2:1 ratio is no longer applied. Instead, the \ce{H2S} concentration in the gas leaving the second Claus reactor stage is controlled between 0.8--1.5 vol.\%. The thermal stage and the two catalytic Claus reactor stages are therefore operated with excess \ce{H2S}. The combustion air is divided into to streams. The major portion (95\%) is charged to the acid gas burner in the combustion chamber, and the remaining quantity is mixed with the tail gas coming from the second Claus reactor stage. This gas mixture is passed to the selective oxidation reactor (the SUPERCLAUS reactor).
+
+\begin{figure}[htbp]
+\centering
+\fbox{\includegraphics[width=\linewidth]{Images/SuperClaus.png}}
+\caption{Flow scheme of the SUPERCLAUS Process \citep{moulijn2001chemical}} 
+\label{fig:superclaus}
+\end{figure}
+
+The Claus reaction (2\ce{H2S} + \ce{SO2} $\longrightarrow$ 3\ce{S}(vapour) + 2\ce{H2O}) now takes place in the thermal stage as well as the in both Claus reactor stages, but now with excess \ce{H2S}. This shifts the equilibrium in such a way that the \ce{SO2} concentration in the gas will be depressed. The \ce{H2S} is subsequently oxidized in the SUPERCLAUS reactor to elemental sulfur according to the reaction \mbox{\ce{H2S} + $\frac{1}{2}$\ce{O2} $\longrightarrow$ $\frac{1}{n}\text{S}_{\text{n}}$ + \ce{H2O}}.
+
+\section{Shell Claus Off-gas Treating Process} \label{sec:SCOT}
+
+\begin{figure}[htbp]
+\centering
+\fbox{\includegraphics[width=\linewidth]{Images/SCOT.png}}
+\caption{Flow scheme of the SCOT process \citep{moulijn2001chemical}}
+\label{fig:scot}
+\end{figure}
+
+In the SCOT process, all the sulfur-containing components in the Claus off-gas (\ce{SO2}, \ce{CS2}, COS) are converted to \ce{H2S} in the presence of hydrogen and a catalyst. The Claus tail gas is injected in a special burner, which produces reducing gas (\ce{H2} and CO) by incomplete fuel combustion. If available, an external source of reducing gas can also be used. In the SCOT reactor, conversion into \ce{H2S} takes place by reaction with hydrogen. After cooling of the gas, \ce{H2S} can then be removed from the gas stream by absorption in an alkanolamine solution.
+
+An appreciable amount of \ce{CO2} is present in the gas stream to the absorber, so ce{H2S} absorption should be selective. This is achieved by choosing the conditions in the absorber such that the bonding of \ce{H2S} to the amine is strong, while reaction of carbon dioxide with the amine is minimal \citep{moulijn2001chemical}.
+
+As shown in Fig \ref{fig:scot}, the process has three sections:
+\begin{enumerate}
+\item a reduction reactor, in which all the sulfur compounds present in the Claus tail gas are
+converted to \ce{H2S}
+\item a cooling/quench section, where the reactor off-gas is cooled and the water is condensed
+\item an absorption section, in which \ce{H2S} is selectively absorbed by an amine solution. The loaded solvent
+is regenerated and the acid gas released is recycled to the inlet of the Claus unit.
+\end{enumerate}
+Selective absorption is based on the fact that the rate of absorption if \ce{H2S} in alkanolamines is substantially more rapid than that of \ce{CO2}. Appreciable selectivity may be attainable by proper selection of the amine and by designing the absorber for short gas and amine solution contact times. In most applications, methyldiethanolamine (MDEA) is the preferred solvent.
+
+\nomenclature{MDEA}{Methyldiethanolamine}
+
+SCOT units can be designed with a dedicated amine regenerator or with a shared amine system. The overall costs are lower if a common amine regenerator is used for the desulfurization and SCOT units \citep{Kohl1997670}

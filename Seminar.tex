@@ -1,0 +1,107 @@
+\documentclass[a4paper,12pt,twoside,openany,Seminar,chapterbib]{ICTv2} % HomePaper or Seminar option
+\title{Desulfurization processes and sulfur recovery}
+\author{\href{mailto:jayshah4494@gmail.com}{JAY RASESH SHAH}}
+\rollno{12CHE1021}
+\department{Department of Chemical Engineering}
+\college{Institute of Chemical Technology}  %your college
+\address{Mumbai -- 400019}
+\degree{Bachelors of Chemical Engineering}
+\degreedate{2015 -- 2016}    %the degree date
+\guide{\textbf{KVM}} %Initials of your guide
+
+\usepackage[svgnames]{xcolor} % Required to specify font color
+\usepackage{tfrupee}
+\pdfmapfile{=tfrupee.map}
+
+\usepackage{lipsum}
+
+\usepackage{textcomp}
+
+\usepackage{layouts}
+
+\usepackage{epstopdf}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{enumitem}
+
+\usepackage{setspace}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{chemfig}
+\usepackage{tikz}
+\usepackage{caption}
+%\usepackage{subfigure}
+\usepackage{subfig}
+\usepackage[pdfauthor={Jay Shah},pdftitle={Desulfurization processes and sulfur recovery},pdfkeywords={Sulfur, Desulfurization, Sulfur recovery, Claus process, MEROX, biodesulfurization, OATS process},pdfsubject={Seminar 2015-16}]{hyperref} %use [hidelinks] 
+
+\usepackage{booktabs} %fancy tables
+\usepackage{float}
+\usepackage[intoc]{nomencl} %FOR NOMENCLATURE
+\makenomenclature
+
+\usepackage{pdfpages} %to insert external title page pdf
+
+\usepackage{listings}
+\usepackage{mcode}
+
+\usepackage{rotating}
+\usepackage{pdflscape}
+
+\usepackage[version=3]{mhchem}
+\usepackage{multirow}
+
+\usepackage{tablefootnote} %allows footnotes in tables. Duh.
+\usepackage{natbib}
+\begin{document} 
+
+%\pagestyle{empty} % Removes page numbers
+%\renewcommand*{\thepage}{Cover}
+%\includepdf{TitlePage.pdf} % includes EXTERNAL title page
+
+\maketitle
+
+\frontmatter
+\tableofcontents
+
+\listoffigures
+\begingroup
+\let\clearpage\relax
+\vspace{3em}
+\listoftables
+\endgroup
+
+\mainmatter
+\input{Chapters/1.Introduction}
+\input{Chapters/2.ProblemStatement}
+\input{Chapters/3.Models}
+\input{Chapters/4.GUIDesign}
+\input{Chapters/5.CaseStudy}
+
+%------------------------------------------------------------------------------------------------
+% FOR NOMENCLATURE
+%------------------------------------------------------------------------------------------------
+%1. COMPILE NORMALLY
+%2. GO TO CMD PROMPT, CHANGE DIRECTORY TO FOLDER
+%3. TYPE makeindex Seminar.nlo -s nomencl.ist -o Seminar.nls
+%4. COMPILE AGAIN
+%------------------------------------------------------------------------------------------------
+
+%\appendix
+
+%\input{Appendices/AppendixA}
+%\input{Appendices/AppendixB}
+\backmatter
+\def\nomname{Abbreviations}
+\printnomenclature[3cm]
+%\addcontentsline{toc}{chapter}{Nomenclature}
+\newpage
+
+%\singlespacing
+\setlength{\bibhang}{7mm}
+\bibliographystyle{ICTv2}
+\bibliography{Bibliography/bibtexdb}
+%\nocite{*}
+
+\end{document}

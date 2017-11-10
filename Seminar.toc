@@ -1,0 +1,25 @@
+\contentsline {chapter}{Contents}{i}{chapter*.1}
+\contentsline {chapter}{List of Figures}{ii}{chapter*.2}
+\contentsline {chapter}{List of Tables}{ii}{chapter*.3}
+\contentsline {chapter}{\numberline {1.}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2.}Conventional Desulfurization Processes}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Hydrodesulfurization}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}Selection of catalysts and reactors for hydrotreatment}{3}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Downflow Fixed-Bed (Trickle bed) reactor}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Moving bed reactors}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Ebullated bed Reactors}{7}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Mercaptans Removal}{8}{section.2.3}
+\contentsline {chapter}{\numberline {3.}Novel desulfurization processes}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Extraction by ionic liquids}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Biodesulfurization}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Olefin alkylation of thiophenic sulfur}{13}{section.3.3}
+\contentsline {chapter}{\numberline {4.}Sulfur Recovery}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Claus Process}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Catalysts \& reactors for the Claus process}{17}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Thermal reactor and waste heat boiler}{17}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Catalytic converter}{18}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Catalysts}{19}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}SUPERCLAUS process}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Shell Claus Off-gas Treating Process}{22}{section.4.4}
+\contentsline {chapter}{\numberline {5.}Conclusions}{24}{chapter.5}
+\contentsline {chapter}{References}{25}{section*.19}
