@@ -1,8 +1,84 @@
-\chapter{Conclusions}
+\chapter{Case Study}
 \thispagestyle{plain}
 
-Desulfurization by way of hydrotreating in the oil refining industry is largely seen as a mature technology. However, as the availability of crude and quality of crude decline, refiners must ensure that they have the capabilities to ensure that statutory fuel standards are met. Hydroprocessing is still the most prevalent technique for desulfurization of gasoline and diesel. In HDS based technologies, less room for breakthroughs exists. Process intensification of the current conventional processes is the most challenging option for the improvement of HDS based technologies. 
+\section{Instance description}
+In this chapter, we present a case study of a well known scheduling instance from \cite{KONDILI1993211}, optimized using the described online tool. The production of two products 1 and 2 from three feed stocks A, B and C takes place according to the STN representation given in Fig. \ref{fig:STN}. This instance has four intermediate states and five tasks.
 
-Novel processes such as biodesulfurization and extraction, have to show a competitive advantage over the tried-and-true chemical methods present in the industry. Biodesulfurization may lead to successful desulfurization, but there are technical difficulties related to the refractory nature of of the sulfur molecules that must be metabolized. Microorganisms with a high sulfur specificity are required, as well as ways to overcome transport limitations. The main disadvantage of extractive processes is that the involvement of an additional phase would lead to large process equipment and reduced efficiency. Although in this report only three non-conventional desulfurization processes have been discussed, the review is by no means an exhaustive one. Selective oxidation of sulfur compounds into hydrocarbons and volatile sulfur products might also be attractive for desulfurization. Autoxidation (oxidation with air as oxidant) is a viable desulfurization strategy for heavy oil. Autoxidation itself leads to little desulfurization and it must be used in combination with a sulfur removal step. 
+\begin{figure}[htbp]
+\centering
+\fbox{\includegraphics[width=\linewidth]{Images/STN.png}}
+\caption{State task network for the example instance}
+\label{fig:STN}
+\end{figure}
 
-The Claus process is limited by the equilibrium relationships of the chemical reactions on which it is based. To overcome these limitations, the basic Claus process has to be supplemented with another process specifically designed to remove residual sulfur compounds from the Claus plant tail gas. The recovery efficiency of Claus plants is continuously being improved by better plant operation, better design methods, and developments of the process technology. Control of air pollution, rather than recovery of sulfur is the main driving force in the development of efficient Claus-type processes.
+Table \ref{tab:statelevels} shows the state maximum capacity and initial load data for the problem. The available unit, task compatibility and processing time data is given in Table \ref{tab:tasks}.
+
+\begin{table}[htbp]
+\centering
+\caption{Problem data (states)}
+\label{tab:statelevels}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+\textbf{State} & \textbf{Capacity} & \textbf{Initial load} & \textbf{Price (per unit)} \\ \midrule
+Feed A         & 1000              & 1000                  & -                         \\
+Feed B         & 1000              & 1000                  & -                         \\
+Feed C         & 1000              & 1000                  & -                         \\
+Hot A          & 100               & -                     & -                         \\
+Int. BC        & 200               & -                     & -                         \\
+Int. AB        & 150               & -                     & -                         \\
+Impure E       & 200               & -                     & -                         \\
+Product 1      & 1000              & -                     & 10                        \\
+Product 2      & 1000              & -                     & 10                        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Problem data (units \& tasks)}
+\label{tab:tasks}
+\begin{tabular}{@{}ccccccccc@{}}
+\toprule
+Unit         & \multicolumn{2}{c}{Heater} & \multicolumn{2}{c}{Reactor 1} & \multicolumn{2}{c}{Reactor 2} & \multicolumn{2}{c}{Separator} \\ \cmidrule(l){2-9} 
+Maximum Load & \multicolumn{2}{c}{100}    & \multicolumn{2}{c}{50}        & \multicolumn{2}{c}{80}        & \multicolumn{2}{c}{200}       \\ \midrule
+Tasks        & $\alpha$       & $\beta$       & $\alpha$         & $\beta$        & $\alpha$         & $\beta$        & $\alpha$         & $\beta$        \\ \cmidrule(l){2-9} 
+Heating      & 0.667        & 0.007       &                &              &                &              &                &              \\
+Reaction 1   &              &             & 1.334          & 0.027        & 1.334          & 0.017        &                &              \\
+Reaction 2   &              &             & 1.334          & 0.027        & 1.334          & 0.017        &                &              \\
+Reaction 3   &              &             & 0.667          & 0.013        & 0.667          & 0.008        &                &              \\
+Separation   &              &             &                &              &                &              & 1.334          & 0.007        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{Adding instance to webtool}
+\subsection{Defining units}
+
+Unit names and maximum capacities from Table \ref{tab:tasks} are input into the units table of the web tool as shown in Fig. \ref{fig:defUnits}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{Images/DefineUnits.png}
+\caption{Units input into webtool}
+\label{fig:defUnits}
+\end{figure}
+
+\subsection{Defining states}
+
+State names, maximum storage capacities and initial levels from Table \ref{tab:statelevels} are input into the units table of the web tool as shown in Fig. \ref{fig:defStates}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{Images/DefineStates.png}
+\caption{States input into webtool}
+\label{fig:defStates}
+\end{figure}
+
+\subsection{Defining tasks}
+
+This instance does not involve utilities. Hence we can skip utilities input. For each task in Table \ref{tab:tasks}, the values of $\alpha$ and $\beta$ are input after selecting the appropriate compatible unit(s). 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{Images/DefineTasks.png}
+\caption{Tasks input into webtool}
+\label{fig:defTasks}
+\end{figure}
