@@ -1,17 +1,131 @@
 \chapter{Scheduling models used}
 \thispagestyle{plain}
 
-\section{CBMN}
 
+This chapter briefly describes the scheduling models supported by the online optimization tool. All the models are mixed-integer linear models.
+
+\section{CBMN}
+This model is best. Best model ever.
+\begin{align}
+&\min_{\substack{W, T, B, \\ U, S, G, z}} \; z &&\\
+\text{s.t.} \; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}) && \\
+		  & z \ge (T_N - T_1)  &&\\	
+		  &T_{n'} - T_{n} \ge \sum_{i \in \mathcal{I}_j} (\alpha_i W_{inn'} + \beta_i B_{inn'}) &&\forall j \in \mathcal{J}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N}_{n}^+ \\
+		  &W_{inn'} B_i^{\text{min}} \le  B_{inn'} \le W_{inn'} B_{i}^{max}  &&\forall j \in \mathcal{J}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N}_n^+ \\
+		  &G_{jn} = G_{j(n-1)} + \sum_{i \in \mathcal{I}_j} \left[\sum_{n' \in \mathcal{N}_{n}^+} W_{inn'} - \sum_{n' \in \mathcal{N}_{n}^{-}} W_{in'n} \right]  &&\forall j \in \mathcal{J}, \forall n \in \mathcal{N} : \{n > 1\} \\
+		  & S_{sn} = S_{s(n-1)} + \sum_{i \in \mathcal{I}_{s}^p} \rho_{is}  \sum_{n' \in \mathcal{N}_{n}^{-}} B_{in'n} - \sum_{i \in \mathcal{I}_{s}^c}\rho_{is} \sum_{n' \in \mathcal{N}_{n}^{+}} B_{inn'}  &&\forall s \in \mathcal{S}, \forall n \in \mathcal{N} \\
+&\begin{aligned}
+&U_{un} = U_{u(n-1)} \\ 
+&+ \sum_{u \in \mathcal{I}_u}  \left[ \sum_{n' \in \mathcal{N}_{n}^{+}} \left(\gamma_{iu} W_{inn'} + \delta_{iu} B_{inn'} \right) - \sum_{n' \in \mathcal{N}_{n}^{-}} \left(\gamma_{iu} W_{in'n} + \delta_{iu} B_{in'n} \right) \right] \\ 
+& \qquad \qquad \qquad \qquad \forall u \in \mathcal{U}, \forall n \in \mathcal{N} : \{ n > 1 \}
+\end{aligned}&& \\
+&\begin{aligned}
+	&T_{n'} - T_{n} \le \bar{M} \left[ 1 - \sum_{i \ in \mathcal{I}_j \cap \mathcal{I}^{\text{zw}}} W_{inn'} \right] &&+ \sum_{i \in \mathcal{I}_j} \left( \alpha_i W_{inn'} + \beta_{inn'} \right) \\ & && \forall j \in \mathcal{J}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N}_{n} ^{+}
+\end{aligned} \\
+&\begin{aligned}
+	&\sum_{i \in \mathcal{I}_j} \sum_{\substack{n' \in \mathcal{N} : \\ \{ n' \ge n\}}} \sum_{n'' \in \mathcal{N}_{n'}^{+}} \left(\alpha_i W_{in'n''} + \beta_i B_{in'n''} \right) &&\le T_N - T_n  \\ & &&\forall j \in \mathcal{J}, \forall n \in \mathcal{N} \\
+\end{aligned} \\
+	&T_N = H &&\\
+	& S_{sN} \ge D_s  \qquad \forall s \in \mathcal{S} && \\
+	& 0 \le G_{jn} \le 1 \qquad \forall j \in \mathcal{J}, \forall n \in \mathcal{N} && \\
+	& 0 \le S_{sn} \le S_{s}^{\text{max}} \qquad \forall s \in \mathcal{S}, n \in \mathcal{N} && \\
+	& 0 \le U_{un} \le U_{u}^{\text{max}} \qquad \forall u \in \mathcal{U}, n \in \mathcal{N} && \\
+	& W_{inn'} = 0 \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} \backslash \mathcal{N}_{n}^+ &&\\
+	& B_{inn'} = 0 \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} \backslash \mathcal{N}_{n}^+ &&\\
+	& T_1 = 0 && \\
+	& G_{jN} = 0 \qquad \forall j \in \mathcal{J} &&\\
+	& W_{inn'} \in {0,1} \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} &&
+\end{align}
 
 \section{MG}
-
+Second best model but big as fuck.
+\begin{align}
+&\min \; z &&\\
+\text{s.t.}\; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}) && \\
+		  & z \ge (T_N - T_1)  &&\\
+		  & T_1 = 0 && \\
+		  & T_N = H && \\
+		  & T_{n+1} \ge T_n && \forall n \\
+		  & \sum_{i \in \mathcal{I}_j} Ws_{\text{in}} \le 1 && \forall j, \forall n \\
+		  & \sum_{i \in \mathcal{I}_j} Wf_{\text{in}} \le 1 && \forall j, \forall n \\
+		  & \sum_n Ws_{\text{in}} = \sum_n Wf_{\text{in}} && \forall i \\
+		  & S_{sn} = S_{sn-1} + \sum_{i \in O(s)} B_{isn}^O - \sum_{i \in I(s)} B_{isn}^I && \forall s, \forall n > 1 \\
+		  & S_{sn} \le S_{s}^{\text{max}} && \forall s, \forall n \\
+		  & U_{un} = U_{un-1} - \sum_i U_{iun-1}^O + \sum_i U_{iun}^I && \forall u, \forall n\\
+		  & U_{un} \le U_{u}^{\text{max}} && \forall u, \forall n \\
+		  & \sum_{i \in \mathcal{I}_j} \sum_{n' \le n} (Ws_{in'} - Wf_{in'}) \le 1 && \forall j, \forall n \\
+		  & Wf_{i0} = 0 && \forall i \\
+		  & Ws_{i0} = 0 && \forall i , n = |N| \\
+		  & D_{in} = \alpha_i Ws_{in} + \beta Bs_{in} && \forall i, \forall n \\
+		  & Tf_{in} \le Ts_{in} + D_{in} + H(1 - Ws_{in}) && \forall i, \forall n \\
+		  & Tf_{in} \ge Ts_{in} + D_{in} + H(1 - Ws_{in}) && \forall i, \forall n \\
+		  & Tf_{in} - Tf_{in-1} \le H Ws_{in} && \forall i, \forall n \\
+		  & Tf_{in} - Tf_{in-1} \ge D_{in} && \forall i, \forall n \\
+		  & Ts_{in} = T_n && \forall i, \forall n \\
+		  & Tf_{in} \le T_n + H(1 - Wf_{in}) && \forall i, \forall n \\
+		  & Tf_{in} \ge T_n - H(1 - Wf_{in}) && \forall i \in I^{\text{zw}}, \forall n \\
+		  & B_{i}^{min} Ws_{in} \le Bs_{in} \le B_{i}^{max} Ws_{in} &&  \forall i, \forall n \\
+		  & B_{i}^{min} Wf_{in} \le Bf_{in} \le B_{i}^{max} Wf_{in} &&  \forall i, \forall n \\
+&\begin{aligned}
+		   B_{i}^{min} (\sum_{n' < n} Ws_{in'} & - \sum_{n' \le n} Wf_{in'})\\ &\le Bp_{in} \le B_{i}^{max}  (\sum_{n' < n} Ws_{in'} - \sum_{n' \le n} Wf_{in'})  
+\end{aligned}  && \forall i, \forall n \\
+		  &Bs_{in-1} + Bp_{in-1} = Bp_{in} + Bf_{in} && \forall i, \forall n \\
+		  &B_{isn}^I = \rho_{is} Bs_{in} && \forall i \in \mathcal{I}_{s}^c, \forall n, \forall s \\
+		  &B_{isn}^I \le B_{i}^{max} \rho_{is} Ws_{in}  && \forall i \in \mathcal{I}_{s}^c, \forall n, \forall s \\
+		  &B_{isn}^O = \rho_{is} Bf_{in} && \forall i \in \mathcal{I}_{s}^p, \forall n, \forall s \\
+		  &B_{isn}^O \le B_{i}^{max} \rho_{is} Wf_{in}  && \forall i \in \mathcal{I}_{s}^p, \forall n, \forall s \\
+		  &U_{iun}^{I} = \gamma_{iu} Ws_{in} + \delta_{iu} Bs_{in} && \forall i, \forall u, \forall n \\
+		  &U_{iun}^{O} = \gamma_{iu} Wf_{in} + \delta_{iu} Bf_{in} && \forall i, \forall u, \forall n
+\end{align}
 
 \section{GHM}
 
 
 \section{IF}
-
+Ierapetroiyadocjhoueotiou 
+\begin{align}
+&\min \; z &&\\
+\text{s.t.}\; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}  -\sum_{i \in \mathcal{I}_{s}^p}\sum_{j \in \mathcal{J}_{i}} B_{iN}) && \\
+		     & z \ge T_{ijn} + \alpha_i W_{iN} + \beta_{i} B_{iN} - T_{ij0}^s  && \forall i \in \mathcal{I}, \forall j \in \mathcal{J}_i \\
+		     & \sum_{i \in \mathcal{I}_j} W_{in} = G_{jn} && \forall j \in \mathcal{J}, \forall n \in \mathcal{N} \\
+		     &B_{i}^{\text{min}} \le B_{in} \le B_{i}^{\text{max}} W_{in} && \forall i \in \mathcal{I}, \forall j \in \mathcal{J}_i, \forall n \in \mathcal{N} \\
+		     & S_{sn} \le S_{s}^{\text{max}} && \forall s \in \mathcal{S}, \forall n \in \mathcal{N} \\
+		     & S_{sn} = S_{s(n-1)} + \sum_{i \in \mathcal{I}_{s}^p} \rho_{is} \sum_{j \in \mathcal{J}_{i}} B_{i(n-1)} - \sum_{i \in \mathcal{I}_{s}^c} \rho_{is} \sum_{j \in \mathcal{J}_{i}} B_{in}  &&\forall s \in \mathcal{S}, \forall n \in \mathcal{N} \\
+		     & S_{sN} \ge D_s && \forall s \in \mathcal{S} \\
+		     & T_{ijn}^f = T_{ijn}^s + \alpha_i W_{in} + \beta_i B_{in} && \forall i \in \mathcal{I}, \forall j \in \mathcal{J}_i, \forall n \in \mathcal{N} \\
+		     & T_{ij(n+1)}^s \ge T_{ijn}^f - H (2 - W_{in} - G_{jn}) && \forall i \in \mathcal{I}, \forall j \in \mathcal{J}_i, \forall n \in \mathcal{N}, n \ne N \\
+		     & T_{ij(n+1)}^s \ge T_{ijn}^s && \forall i \in \mathcal{I}, \forall j \in \mathcal{J}_i, \forall n \in \mathcal{N}, n \ne N \\
+		     & T_{ij(n+1)}^f \ge T_{ijn}^f && \forall i \in \mathcal{I}, \forall j \in \mathcal{J}_i, \forall n \in \mathcal{N}, n \ne N \\
+		     & T_{ij(n+1)}^s \ge T_{i'jn}^f - H (2 - W_{i'n} - G_{jn}) && \forall j \in \mathcal{J}, \forall i \in \mathcal{I}_j, \\
+		     & &&\forall i' \in \mathcal{I}_j, i \ne i', \forall n \in \mathcal{N}, n \ne N \nonumber \\
+		     & T_{ij(n+1)}^s \ge \sum_{n' \in \mathcal{N}, n' \le \mathcal{N}} \sum_{i' \in \mathcal{I}_j} (T_{i'jn'}^f - T_{i'jn'}^s) &&\forall i \in \mathcal{I}, \forall j \in \mathcal{J}_i, \\ 
+		     & &&\forall n \in \mathcal{N}, n \ne \mathcal{N} \nonumber \\
+		     & T_{ijn}^f \le H && i \in \mathcal{I}, \forall j \in \mathcal{J}_i, n \in \mathcal{N} \\
+		     & T_{ijn}^s \le H &&  i \in \mathcal{I}, \forall j \in \mathcal{J}_i, n \in \mathcal{N}
+\end{align}
 
 \section{SK}
-
+Shit model
+\begin{align}
+&\min \; z &&\\
+\text{s.t.}\; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}) && \\
+		  & z \ge \sum_{n\in \mathcal{N}} SL_n  &&\\
+		  & \sum_{n=1}^N SL_n \le H &&\\
+		  & G_{jn} = \sum_{i \in \mathcal{I}_j} Ws_{in} && 0 \le n < N \\
+		  & B_{i}^{min} Ws_{in} \le Bp_{in} \le B_{i}^{max} Ws_{in} && i > 0\\
+		  & Wp_{in} = Wp_{i(n-1)} + Ws_{i(n-1)} - Wf_{in} && 0 < n < N \\
+		  & G_{jn} = \sum_{i \in \mathcal{I}_j} Wf_{in}  && 0 < n < N \\
+		  & \sum_{i \in \mathcal{I}_j} Wp_{in} + G_{jn} = 1 && 0 < n < N \\
+		  & Wp_{in}  +Ws_{in} \le 1 && 0 < n < N \\
+		  & Wp_{in} + Wf_{in} \le 1 && 0 < n < N \\
+		  & t_{j(n+1)} \ge t_{jn} + \sum_{i \ in \mathcal{I}_j} (\alpha_i Ws_{in} + \beta_i Bp_{in}) - SL_{n+1} && n < N \\
+		  & Bs_{in} = Bs_{i(n-1)} + Bp_{i(n-1)} - Bf_{in}  && i > 0, n > 0 \\
+		  & B_{i}^{min} Wp_{in} \le Bs_{in} \le B_{i}^{max} Wp_{in} && i > 0, 0 < n < N \\
+		  & B_{i}^{min} Wf_{in} \le Bf_{in} \le B_{i}^{max} Wf_{in} && i > 0, 0 < n < N \\ 
+		  & t_{jn} \le \sum_{i \ in  \mathcal{I}_j} (\alpha_i Wp_{in} + \beta_i Bs_{in})  && 0 < n < N \\
+		  & S_{sn} = S_{s(n-1)} + \sum_{\substack{i\in \mathcal{I}_{s}^p\\ i \ne 0}} \sum_{j \in \mathcal{J}_i} \rho_{is} Bf_{in} -   \sum_{\substack{i\in \mathcal{I}_{s}^c\\ i \ne 0}} \sum_{j \in \mathcal{J}_i} \rho_{is} Bp_{in} &&\forall s \in \mathcal{S}, \forall n \\
+		  & SL_n \le \max_j \left[\max_{i \in \mathcal{I}_j} (\alpha_i + \beta_i B_{i}^{max}) \right] && \forall n \\
+		  & t_{jn} \le \max_{j \in \mathcal{J}_i} (\alpha_i + \beta_i B_{i}^{max}) && \forall j \in \mathcal{J}, \forall n \\
+		  & S_{sn} \le S_{s}^{max} && \forall s \in \mathcal{S} , \forall n \\
+		  & Bp_{in}, Bs_{in}, Bf_{in} \le B_{i}^{max} && \forall i \in \mathcal{I}, \forall n
+\end{align}

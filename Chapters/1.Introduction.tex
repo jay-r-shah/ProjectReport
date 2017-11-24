@@ -11,3 +11,16 @@ Scheduling problems arise in almost any type of industrial production facilities
 \end{itemize}
 
 For batch processes, short-term scheduling deals with the allocation of a set of limited resources over time to manufacture one or more products following a batch recipe \citep{MENDEZ}. There has been significant development of optimization approaches to scheduling over the last two decades. The first mathematical programming approach the scheduling of multi-purpose, multi-product batch plants was proposed by \cite{KONDILI1993211}. This approach introduces the state task network (STN) representation where the process is described as a bipartite graph consisting of states and tasks.
+
+\section{Parameter uncertainty in process scheduling}
+
+In realistic scenarios, many of the parameters associated with scheduling are not known exactly. Parameters such as processing time, yields, prices, etc. can vary with respect to time and are subject to unexpected deviations. Robust optimization is an approach that has been suggested to mitigate these uncertainties while designing a schedule. Robust optimization seeks to generate a solution that is immune to uncertainty by ensuring that it remains feasible for all possible realizations of the uncertain parameters from within a set chosen \emph{a priori} by the modeler.
+
+This work supports two frameworks to handle uncertainty of parameters:
+
+\begin{itemize}
+\item \textbf{Static Robust Optimization: } The first application of robust optimization in process scheduling was by \cite{LIN20041069}. This work, which utilized box uncertainty sets, was later extended by \cite{JANAK2007171} to consider uncertainty sets derived from probabilistic information. \cite{LiIerapetritou} considered box, ellipsoidal and budget uncertainty sets. All these single-stage approaches are collectively referred to as Static Robust Optimization (SRO).
+
+\item \textbf{Adjustable Robust Optimization: } SRO approaches are generally conservative, as they assume that all of the decisions have to be made 	``here-and-now'', before the schedule begins to be implemented. In reality, many of the decisions can be ``wait-and-see'', meaning that they can be delayed until a later point when the a subset of the uncertain parameters have revealed their values. To handle such multi-stage decision making strategies, Adjustable Robust Optimization (ARO) is used, where an optimal policy is derived instead of a single, static solution. The optimal policy constitutes a family of solutions that are parameterized in the uncertain parameter realizations \citep{lappas}.
+
+\end{itemize}•

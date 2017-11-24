@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,twoside,openany,Seminar,chapterbib]{CMU} % HomePaper or Seminar option
+\documentclass[a4paper,12pt,twoside,openany,HomePaper,chapterbib]{CMU} % HomePaper or Seminar option
 \title{Online optimization for process scheduling}
 \author{{JAY RASESH SHAH}}
 %\rollno{12CHE1021}
@@ -26,13 +26,17 @@
 \usepackage{setspace}
 
 \usepackage{amsmath}
+\numberwithin{equation}{section}
+
 \usepackage{amssymb}
+\usepackage{pifont}
+\newcommand{\xmark}{\ding{55}}%
 %\usepackage{chemfig}
 \usepackage{tikz}
 \usepackage{caption}
 %\usepackage{subfigure}
 \usepackage{subfig}
-\usepackage[pdfauthor={Jay Shah},pdftitle={Desulfurization processes and sulfur recovery},pdfkeywords={Sulfur, Desulfurization, Sulfur recovery, Claus process, MEROX, biodesulfurization, OATS process},pdfsubject={Seminar 2015-16}]{hyperref} %use [hidelinks] 
+\usepackage[pdfauthor={Jay Shah},pdftitle={Online optimization for process scheduling},pdfkeywords={Scheduling, Optimization, MILP},pdfsubject={MS Project Report}]{hyperref} %use [hidelinks] 
 
 \usepackage{booktabs} %fancy tables
 \usepackage{float}
@@ -44,6 +48,28 @@
 \usepackage{listings}
 \usepackage{mcode}
 
+\lstset{
+    xleftmargin=.2\textwidth, xrightmargin=.2\textwidth,
+    basicstyle=\footnotesize\ttfamily,
+    language=html,     
+    frame=single,
+    tabsize=4,
+    inputencoding=utf8,
+    extendedchars=true,
+    upquote=true,
+    breaklines=true, 
+    rulecolor=\color{black!30},
+    backgroundcolor=\color{gray!10},
+    identifierstyle=\color{magenta!50!black},
+    string=[s]{"}{"},
+    stringstyle=\color{blue},
+    breakatwhitespace=true,
+    framextopmargin=2pt,
+    framexbottommargin=2pt, 
+    comment=[l]{:},
+    commentstyle=\color{black},
+    lineskip={-1.5pt}
+}
 \usepackage{rotating}
 \usepackage{pdflscape}
 
@@ -52,6 +78,7 @@
 
 \usepackage{tablefootnote} %allows footnotes in tables. Duh.
 \usepackage{natbib}
+\allowdisplaybreaks
 \begin{document} 
 
 %\pagestyle{empty} % Removes page numbers

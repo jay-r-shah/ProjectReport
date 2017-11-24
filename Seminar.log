@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.10)  10 NOV 2017 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.10)  24 NOV 2017 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,8 +6,8 @@ entering extended mode
 (./Seminar.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-(c:/texlive/2016/texmf-dist/tex/latex/misc/ICTv2.cls
-Document Class: ICTv2 2015/17/05 1.0g LaTeX document class (wm).
+(./CMU.cls
+Document Class: CMU 2015/17/05 1.0g LaTeX document class (wm).
 (c:/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip41
 \f@ncyO@elh=\skip42
@@ -54,9 +54,6 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 (c:/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2016/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
 \hours=\count80
 \minutes=\count81
 
@@ -99,12 +96,6 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 (c:/texlive/2016/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 ))
-(c:/texlive/2016/texmf-dist/tex/latex/tfrupee/tfrupee.sty
-Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by Tech
-Fat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html)
-. Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
-){c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2016
-/texmf-dist/fonts/map/dvips/tfrupee/tfrupee.map}
 (c:/texlive/2016/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count91
@@ -426,6 +417,18 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -905,7 +908,13 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 -- Package: `mcode' 2.5 <2014/03/06> --
 Package: mcode 2014/03/06 2.5
  - settings optimized for display (colour formating)
-) (c:/texlive/2016/texmf-dist/tex/latex/graphics/rotating.sty
+) (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(c:/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/05/22 v2.16c rotated objects in LaTeX
 \c@r@tfl@t=\count278
 \rotFPtop=\skip95
@@ -1210,32 +1219,28 @@ LaTeX Info: Redefining \cite on input line 694.
 ) (./Seminar.aux)
 \openout1 = `Seminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 82.
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 57.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
 
-(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count358
@@ -1251,7 +1256,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \everyMPtoPDFconversion=\toks42
 )
 
-Package layouts Warning: Layout scale set to 0.5 on input line 57.
+Package layouts Warning: Layout scale set to 0.5 on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1301,7 +1306,7 @@ Package caption Info: End \AtBeginDocument code.
 Package hyperref Warning: Height of page (\stockheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring OFF on input line 57.
+Package hyperref Info: Link coloring OFF on input line 82.
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1310,9 +1315,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count364
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
 (./Seminar.out) (./Seminar.out)
 \@outlinefile=\write5
@@ -1322,32 +1327,9 @@ LaTeX Info: Redefining \nameref on input line 57.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 57.
+. Activating mapping `default' on line 82.
 .................................................
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
- <ICT_Logo.png, id=83, 1505.625pt x 1505.625pt>
-File: ICT_Logo.png Graphic file (type png)
-
-<use ICT_Logo.png>
-Package pdftex.def Info: ICT_Logo.png used on input line 64.
-(pdftex.def)             Requested size: 142.26378pt x 142.25475pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
- [1
-
-
- <c:/texlive/2016/texmf-dist/tex/latex/misc/ICT_Logo.png>]pdfTeX warning (ext4)
-: destination with the same identifier (name{page.Cover}) has been already used
-, duplicate ignored
-<to be read again> 
-                   \relax 
-l.65 \frontmatter
-                  [2
-
-] (./Seminar.toc
+ (./Seminar.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1363,275 +1345,53 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-] (./Seminar.lof)
+
+
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Seminar.lof)
 \tf@lof=\write7
 \openout7 = `Seminar.lof'.
 
-
-(./Seminar.lot
-
-Package natbib Warning: Citation `Rana20071216' on page ii undefined on input l
-ine 3.
-
-)
+ (./Seminar.lot)
 \tf@lot=\write8
 \openout8 = `Seminar.lot'.
 
- [2
-
-] (./Chapters/1.Introduction.tex
-Chapter 1.
-) (./Chapters/2.ProblemStatement.tex [1
-
-
-]
-Chapter 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
-Package epstopdf Info: Source file: <Images/Thiol.eps>
-(epstopdf)                    date: 2015-09-17 12:04:45
-(epstopdf)                    size: 17916 bytes
-(epstopdf)             Output file: <Images/Thiol-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-17 12:10:12
-(epstopdf)                    size: 2782 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/Thiol-eps-converted
--to.pdf Images/Thiol.eps>
-(epstopdf)             \includegraphics on input line 13.
-Package epstopdf Info: Output file is already uptodate.
-<Images/Thiol-eps-converted-to.pdf, id=204, 28.105pt x 9.03375pt>
-File: Images/Thiol-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/Thiol-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Thiol-eps-converted-to.pdf used on input line 1
-3.
-(pdftex.def)             Requested size: 28.10492pt x 9.0337pt.
-
-Overfull \hbox (8.77472pt too wide) in paragraph at lines 13--13
-[][]|[]| 
- []
-
-Package epstopdf Info: Source file: <Images/Sulfide.eps>
-(epstopdf)                    date: 2015-09-17 12:04:56
-(epstopdf)                    size: 17959 bytes
-(epstopdf)             Output file: <Images/Sulfide-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-17 12:10:15
-(epstopdf)                    size: 2793 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/Sulfide-eps-convert
-ed-to.pdf Images/Sulfide.eps>
-(epstopdf)             \includegraphics on input line 17.
-Package epstopdf Info: Output file is already uptodate.
-<Images/Sulfide-eps-converted-to.pdf, id=205, 38.1425pt x 9.03375pt>
-File: Images/Sulfide-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/Sulfide-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Sulfide-eps-converted-to.pdf used on input line
- 17.
-(pdftex.def)             Requested size: 38.1424pt x 9.0337pt.
-
-Overfull \hbox (6.65405pt too wide) in paragraph at lines 17--17
-[][]|[]| 
- []
-
-Package epstopdf Info: Source file: <Images/Disulfide.eps>
-(epstopdf)                    date: 2015-09-17 12:05:06
-(epstopdf)                    size: 18016 bytes
-(epstopdf)             Output file: <Images/Disulfide-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-17 12:10:18
-(epstopdf)                    size: 2811 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/Disulfide-eps-conve
-rted-to.pdf Images/Disulfide.eps>
-(epstopdf)             \includegraphics on input line 21.
-Package epstopdf Info: Output file is already uptodate.
-<Images/Disulfide-eps-converted-to.pdf, id=206, 55.20625pt x 9.03375pt>
-File: Images/Disulfide-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/Disulfide-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Disulfide-eps-converted-to.pdf used on input li
-ne 21.
-(pdftex.def)             Requested size: 55.2061pt x 9.0337pt.
-Package epstopdf Info: Source file: <Images/Thiolane.eps>
-(epstopdf)                    date: 2015-09-17 12:01:42
-(epstopdf)                    size: 18064 bytes
-(epstopdf)             Output file: <Images/Thiolane-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-17 12:10:42
-(epstopdf)                    size: 2820 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/Thiolane-eps-conver
-ted-to.pdf Images/Thiolane.eps>
-(epstopdf)             \includegraphics on input line 25.
-Package epstopdf Info: Output file is already uptodate.
-
-<Images/Thiolane-eps-converted-to.pdf, id=207, 27.10126pt x 30.1125pt>
-File: Images/Thiolane-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/Thiolane-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Thiolane-eps-converted-to.pdf used on input lin
-e 25.
-(pdftex.def)             Requested size: 27.10118pt x 30.11241pt.
-
-Overfull \hbox (7.69135pt too wide) in paragraph at lines 25--25
-[][]|[]| 
- []
-
-Package epstopdf Info: Source file: <Images/Thiophene.eps>
-(epstopdf)                    date: 2015-09-17 12:01:51
-(epstopdf)                    size: 18157 bytes
-(epstopdf)             Output file: <Images/Thiophene-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-17 12:10:45
-(epstopdf)                    size: 2858 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/Thiophene-eps-conve
-rted-to.pdf Images/Thiophene.eps>
-(epstopdf)             \includegraphics on input line 29.
-Package epstopdf Info: Output file is already uptodate.
-<Images/Thiophene-eps-converted-to.pdf, id=208, 35.13126pt x 34.1275pt>
-File: Images/Thiophene-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/Thiophene-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Thiophene-eps-converted-to.pdf used on input li
-ne 29.
-(pdftex.def)             Requested size: 35.13115pt x 34.1274pt.
-
-Overfull \hbox (2.98407pt too wide) in paragraph at lines 29--29
-[][]|[]| 
- []
-
-Package epstopdf Info: Source file: <Images/Benzothiophene.eps>
-(epstopdf)                    date: 2015-09-17 12:01:15
-(epstopdf)                    size: 18470 bytes
-(epstopdf)             Output file: <Images/Benzothiophene-eps-converted-to.pdf
->
-(epstopdf)                    date: 2015-09-17 12:10:48
-(epstopdf)                    size: 2954 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/Benzothiophene-eps-
-converted-to.pdf Images/Benzothiophene.eps>
-(epstopdf)             \includegraphics on input line 33.
-Package epstopdf Info: Output file is already uptodate.
-<Images/Benzothiophene-eps-converted-to.pdf, id=209, 62.2325pt x 46.1725pt>
-File: Images/Benzothiophene-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/Benzothiophene-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Benzothiophene-eps-converted-to.pdf used on inp
-ut line 33.
-(pdftex.def)             Requested size: 62.23235pt x 46.17236pt.
-Package epstopdf Info: Source file: <Images/Dibenzothiophene.eps>
-(epstopdf)                    date: 2015-09-17 12:01:23
-(epstopdf)                    size: 18783 bytes
-(epstopdf)             Output file: <Images/Dibenzothiophene-eps-converted-to.p
-df>
-(epstopdf)                    date: 2015-09-17 12:10:51
-(epstopdf)                    size: 3026 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/Dibenzothiophene-ep
-s-converted-to.pdf Images/Dibenzothiophene.eps>
-(epstopdf)             \includegraphics on input line 37.
-Package epstopdf Info: Output file is already uptodate.
-
-<Images/Dibenzothiophene-eps-converted-to.pdf, id=210, 88.33pt x 46.1725pt>
-File: Images/Dibenzothiophene-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/Dibenzothiophene-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Dibenzothiophene-eps-converted-to.pdf used on i
-nput line 37.
-(pdftex.def)             Requested size: 88.32977pt x 46.17236pt.
-Package epstopdf Info: Source file: <Images/Benzonaphtothiophene.eps>
-(epstopdf)                    date: 2015-09-17 12:01:00
-(epstopdf)                    size: 19100 bytes
-(epstopdf)             Output file: <Images/Benzonaphtothiophene-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2015-09-17 12:10:54
-(epstopdf)                    size: 3137 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/Benzonaphtothiophen
-e-eps-converted-to.pdf Images/Benzonaphtothiophene.eps>
-(epstopdf)             \includegraphics on input line 41.
-Package epstopdf Info: Output file is already uptodate.
-
-<Images/Benzonaphtothiophene-eps-converted-to.pdf, id=211, 109.40875pt x 58.217
-5pt>
-File: Images/Benzonaphtothiophene-eps-converted-to.pdf Graphic file (type pdf)
- <use Images/Benzonaphtothiophene-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Benzonaphtothiophene-eps-converted-to.pdf used 
-on input line 41.
-(pdftex.def)             Requested size: 109.40846pt x 58.21735pt.
-
-Overfull \hbox (9.73357pt too wide) in paragraph at lines 41--41
-[][]|[]| 
- []
-
-Package epstopdf Info: Source file: <Images/HDSreactions.eps>
-(epstopdf)                    date: 2015-09-15 06:04:11
-(epstopdf)                    size: 23023 bytes
-(epstopdf)             Output file: <Images/HDSreactions-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-15 06:11:09
-(epstopdf)                    size: 4400 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/HDSreactions-eps-co
-nverted-to.pdf Images/HDSreactions.eps>
-(epstopdf)             \includegraphics on input line 48.
-Package epstopdf Info: Output file is already uptodate.
-<Images/HDSreactions-eps-converted-to.pdf, id=212, 318.18875pt x 153.57375pt>
-File: Images/HDSreactions-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/HDSreactions-eps-converted-to.pdf>
-Package pdftex.def Info: Images/HDSreactions-eps-converted-to.pdf used on input
- line 48.
-(pdftex.def)             Requested size: 452.9679pt x 218.62457pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 48--49
- [][] 
- []
 
 [2
 
- <./Images/Thiol-eps-converted-to.pdf> <./Images/Sulfide-eps-converted-to.pdf> 
-<./Images/Disulfide-eps-converted-to.pdf> <./Images/Thiolane-eps-converted-to.p
-df> <./Images/Thiophene-eps-converted-to.pdf> <./Images/Benzothiophene-eps-conv
-erted-to.pdf> <./Images/Dibenzothiophene-eps-converted-to.pdf> <./Images/Benzon
-aphtothiophene-eps-converted-to.pdf>]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+] (./Chapters/1.Introduction.tex
+Chapter 1.
+[1
 
 
-Package natbib Warning: Citation `Rana20071216' on page 3 undefined on input li
-ne 68.
-
-
-Package natbib Warning: Citation `Rana20071216' on page 3 undefined on input li
-ne 68.
-
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 72.
-(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-LaTeX Font Info:    Font shape `TS1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `TS1/ptm/b/n' tried instead on input line 72.
-
-
-Package natbib Warning: Citation `Topsoe' on page 3 undefined on input line 90.
-
-
+]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+) (./Chapters/2.ProblemStatement.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <./Images/HDSreactions-eps-converted-to.pdf>]
-Overfull \hbox (6.90096pt too wide) in paragraph at lines 92--93
-[]\OT1/ptm/m/n/12 Although dif-fer-ent types of re-ac-tor de-signs are mar-kete
-d, they all work on the same principle--
- []
+[2]
+Chapter 2.
+) (./Chapters/3.Models.tex [3
 
-<Images/Hydroprocessingreactors.png, id=287, 895.09406pt x 469.00218pt>
-File: Images/Hydroprocessingreactors.png Graphic file (type png)
+]
+Chapter 3.
 
-<use Images/Hydroprocessingreactors.png>
-Package pdftex.def Info: Images/Hydroprocessingreactors.png used on input line 
-96.
-(pdftex.def)             Requested size: 452.9679pt x 237.34875pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 96--97
- [][] 
+Overfull \hbox (51.46742pt too wide) in paragraph at lines 38--38
+[] 
  []
 
 
-Underfull \vbox (badness 1874) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1640,35 +1400,9 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4]
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5 <./Images/Hydroprocessingreactors.png>]
-<Images/Bunkerreactor.png, id=303, 375.65344pt x 488.57532pt>
-File: Images/Bunkerreactor.png Graphic file (type png)
-
-<use Images/Bunkerreactor.png>
-Package pdftex.def Info: Images/Bunkerreactor.png used on input line 121.
-(pdftex.def)             Requested size: 187.82625pt x 244.28706pt.
-
-<Images/QCRreactor.png, id=304, 210.03468pt x 491.58656pt>
-File: Images/QCRreactor.png Graphic file (type png)
-
-<use Images/QCRreactor.png>
-Package pdftex.def Info: Images/QCRreactor.png used on input line 125.
-(pdftex.def)             Requested size: 105.01707pt x 245.79268pt.
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 144.
-
-
-(c:/texlive/2016/texmf-dist/tex/latex/psnfss/omlptm.fd
-File: omlptm.fd 
-)
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 144.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
@@ -1676,19 +1410,9 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./Images/Bunkerreactor.png> <./Images/QCRreactor.png>]
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7] <Images/MEROX.png, id=326, 672.26157pt x 443.40656pt>
-File: Images/MEROX.png Graphic file (type png)
-
-<use Images/MEROX.png>
-Package pdftex.def Info: Images/MEROX.png used on input line 176.
-(pdftex.def)             Requested size: 356.29692pt x 235.00435pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
@@ -1696,7 +1420,14 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./Images/MEROX.png>]) (./Chapters/3.Models.tex
+[7]
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]) (./Chapters/4.GUIDesign.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
@@ -1704,19 +1435,25 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Chapter 3.
-[10
+Chapter 4.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
+(c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+ [10
 
-] <Images/Extractionscheme.png, id=352, 554.82281pt x 318.43968pt>
-File: Images/Extractionscheme.png Graphic file (type png)
-
-<use Images/Extractionscheme.png>
-Package pdftex.def Info: Images/Extractionscheme.png used on input line 14.
-(pdftex.def)             Requested size: 362.37569pt x 207.98428pt.
-
-
-Package natbib Warning: Citation `Javadli' on page 11 undefined on input line 2
-5.
+]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
 
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
@@ -1724,7 +1461,22 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./Images/Extractionscheme.png>]
+[11]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+ <Images/GUIDesign.png, id=356, 723.6636pt x 332.442pt>
+File: Images/GUIDesign.png Graphic file (type png)
+
+<use Images/GUIDesign.png>
+Package pdftex.def Info: Images/GUIDesign.png used on input line 150.
+(pdftex.def)             Requested size: 452.9679pt x 208.08516pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 169.
+
+) (./Chapters/5.CaseStudy.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
@@ -1732,252 +1484,135 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-Package epstopdf Info: Source file: <Images/OATS.eps>
-(epstopdf)                    date: 2015-09-27 11:54:06
-(epstopdf)                    size: 22997 bytes
-(epstopdf)             Output file: <Images/OATS-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-27 12:12:35
-(epstopdf)                    size: 5814 bytes
-(epstopdf)             Command: <repstopdf --outfile=Images/OATS-eps-converted-
-to.pdf Images/OATS.eps>
-(epstopdf)             \includegraphics on input line 56.
-Package epstopdf Info: Output file is already uptodate.
- <Images/OATS-eps-converted-to.pdf, id=375, 653.44125pt x 356.33125pt>
-File: Images/OATS-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Images/OATS-eps-converted-to.pdf>
-Package pdftex.def Info: Images/OATS-eps-converted-to.pdf used on input line 56
-.
-(pdftex.def)             Requested size: 452.9679pt x 247.01062pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 56--57
- [][] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./Images/OATS-eps-converted-to.pdf>]) (./Chapters/4.GUIDesign.tex
+[13]
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
-Chapter 4.
-[15
-
-] <Images/ClausPFD.png, id=406, 980.91469pt x 487.06969pt>
-File: Images/ClausPFD.png Graphic file (type png)
-
-<use Images/ClausPFD.png>
-Package pdftex.def Info: Images/ClausPFD.png used on input line 30.
-(pdftex.def)             Requested size: 452.9679pt x 224.91689pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 30--31
- [][] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[16 <./Images/ClausPFD.png>]
-<Images/WHB.png, id=416, 768.62157pt x 286.06876pt>
-File: Images/WHB.png Graphic file (type png)
- <use Images/WHB.png>
-Package pdftex.def Info: Images/WHB.png used on input line 53.
-(pdftex.def)             Requested size: 452.9679pt x 168.5914pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 53--54
- [][] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17 <./Images/WHB.png>]
-<Images/ClausConverter.png, id=431, 639.13782pt x 304.13625pt>
-File: Images/ClausConverter.png Graphic file (type png)
-
-<use Images/ClausConverter.png>
-Package pdftex.def Info: Images/ClausConverter.png used on input line 74.
-(pdftex.def)             Requested size: 362.37569pt x 172.44058pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18 <./Images/ClausConverter.png>]
-Underfull \vbox (badness 1194) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[19]
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-
-
-LaTeX Font Warning: Font shape `OML/ptm/bx/n' undefined
-(Font)              using `OML/ptm/m/it' instead
-(Font)              for symbol `textgreater' on input line 115.
-
-LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 115.
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21] <Images/SuperClaus.png, id=477, 919.18407pt x 395.22656pt>
-File: Images/SuperClaus.png Graphic file (type png)
-
-<use Images/SuperClaus.png>
-Package pdftex.def Info: Images/SuperClaus.png used on input line 140.
-(pdftex.def)             Requested size: 452.9679pt x 194.76631pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 140--141
- [][] 
- []
-
-<Images/SCOT.png, id=482, 914.66719pt x 429.85594pt>
-File: Images/SCOT.png Graphic file (type png)
- <use Images/SCOT.png>
-Package pdftex.def Info: Images/SCOT.png used on input line 151.
-(pdftex.def)             Requested size: 452.9679pt x 212.87445pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 151--152
- [][] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22 <./Images/SuperClaus.png>]) (./Chapters/5.CaseStudy.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23 <./Images/SCOT.png>]
+[14 <./Images/GUIDesign.png>]
 Chapter 5.
-) [24
+<Images/STN.png, id=435, 947.79094pt x 488.57532pt>
+File: Images/STN.png Graphic file (type png)
+ <use Images/STN.png>
+Package pdftex.def Info: Images/STN.png used on input line 9.
+(pdftex.def)             Requested size: 452.9679pt x 233.4996pt.
 
-]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 9--10
+ [][] 
+ []
+
+<Images/DefineUnits.png, id=440, 702.625pt x 331.2375pt>
+File: Images/DefineUnits.png Graphic file (type png)
+
+<use Images/DefineUnits.png>
+Package pdftex.def Info: Images/DefineUnits.png used on input line 59.
+(pdftex.def)             Requested size: 452.9679pt x 213.54797pt.
+
+<Images/DefineStates.png, id=443, 923.45pt x 545.03625pt>
+File: Images/DefineStates.png Graphic file (type png)
+
+<use Images/DefineStates.png>
+Package pdftex.def Info: Images/DefineStates.png used on input line 70.
+(pdftex.def)             Requested size: 452.9679pt x 267.34454pt.
+ [15
+
+ <./Images/STN.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./Images/DefineUnits.png>]
+<Images/DefineTasks.png, id=457, 1003.75pt x 663.47874pt>
+File: Images/DefineTasks.png Graphic file (type png)
+
+<use Images/DefineTasks.png>
+Package pdftex.def Info: Images/DefineTasks.png used on input line 81.
+(pdftex.def)             Requested size: 452.9679pt x 299.41307pt.
+
+<Images/DefineObjective.png, id=458, 501.875pt x 170.6375pt>
+File: Images/DefineObjective.png Graphic file (type png)
+
+<use Images/DefineObjective.png>
+Package pdftex.def Info: Images/DefineObjective.png used on input line 90.
+(pdftex.def)             Requested size: 362.37569pt x 123.213pt.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17 <./Images/DefineStates.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./Images/DefineTasks.png> <./Images/DefineObjective.png>]
 No file Seminar.nls.
 (./Seminar.bbl
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
- [25
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+) [19
 
 
 ]
-Missing character: There is no √ in font ptmr7t!
-Missing character: There is no © in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no î in font ptmr7t!
-
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26])
-
-Package natbib Warning: There were undefined citations.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./Seminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `Seminar.out' has not changed.
-(rerunfilecheck)             Checksum: E09A87D6C2AA7232DCF57F47A9E30828;1231.
+(rerunfilecheck)             Checksum: 7CE3198ABF007112EB53CDFF4E4DBF66;1242.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 75 (\begingroup)
+### semi simple group (level 1) entered at line 98 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31238 strings out of 493013
- 581751 string characters out of 6136993
- 774655 words of memory out of 5000000
- 34109 multiletter control sequences out of 15000+600000
- 38361 words of font info for 86 fonts, out of 8000000 for 9000
+ 31383 strings out of 493013
+ 581105 string characters out of 6136993
+ 816293 words of memory out of 5000000
+ 34162 multiletter control sequences out of 15000+600000
+ 13668 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,27n,54p,10372b,823s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
-c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2016/te
-xmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2016/texmf-dist/fonts/typ
-e1/urw/times/utmr8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri
-8a.pfb>
-Output written on Seminar.pdf (31 pages, 1450586 bytes).
+ 55i,20n,54p,10372b,1314s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c
+:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msam10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Seminar.pdf (21 pages, 606344 bytes).
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
- 498 compressed objects within 5 object streams
- 118 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 241 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

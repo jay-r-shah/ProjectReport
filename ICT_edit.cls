@@ -16,7 +16,6 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx} % needed for latest frontpage logo
 \RequirePackage{ifthen}   % needed for option parsing for logo
-\RequirePackage{times}
 \def\logoversion{squarelogo}
 \newcommand\@ptsize{}
 \newif\if@restonecol
