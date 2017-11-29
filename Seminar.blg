@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Seminar.aux
 The style file: ICTv2.bst
 Database file #1: Bibliography/bibtexdb.bib
-You've used 7 entries,
+You've used 12 entries,
             1965 wiz_defined-function locations,
-            542 strings with 5728 characters,
-and the built_in function-call counts, 3349 in all, are:
-= -- 316
-> -- 161
-< -- 2
-+ -- 62
-- -- 56
-* -- 340
-:= -- 578
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 56
-chr.to.int$ -- 7
-cite$ -- 7
-duplicate$ -- 98
-empty$ -- 220
-format.name$ -- 67
-if$ -- 640
+            586 strings with 6977 characters,
+and the built_in function-call counts, 5516 in all, are:
+= -- 527
+> -- 241
+< -- 5
++ -- 92
+- -- 82
+* -- 554
+:= -- 943
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 89
+chr.to.int$ -- 12
+cite$ -- 12
+duplicate$ -- 168
+empty$ -- 377
+format.name$ -- 104
+if$ -- 1065
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 7
-newline$ -- 38
-num.names$ -- 21
-pop$ -- 46
+missing$ -- 12
+newline$ -- 63
+num.names$ -- 36
+pop$ -- 71
 preamble$ -- 1
-purify$ -- 63
+purify$ -- 101
 quote$ -- 0
-skip$ -- 73
+skip$ -- 126
 stack$ -- 0
-substring$ -- 289
-swap$ -- 14
+substring$ -- 494
+swap$ -- 24
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
+type$ -- 72
 warning$ -- 0
-while$ -- 22
+while$ -- 37
 width$ -- 0
-write$ -- 94
+write$ -- 159

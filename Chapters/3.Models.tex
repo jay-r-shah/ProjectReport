@@ -1,11 +1,11 @@
 \chapter{Scheduling models used}
 \thispagestyle{plain}
 
+This chapter briefly describes the scheduling models supported by the online optimization tool. All the models are continuous time, mixed-integer linear models and can be readily solved with standard MILP optimization solvers. All models can account for two objectives: maximization of profit and minimization of makespan.
 
-This chapter briefly describes the scheduling models supported by the online optimization tool. All the models are mixed-integer linear models.
+\section{CBMN 2004}
+This is a global event-based continuous time process scheduling model that was first introduced by \cite{Castro}. It uses a resource task network based uniform-time-grid continuous time representation. One of the key aspects of this model is the set of tightening constraints (Equation \ref{castroTight}) which are not necessary for completeness but are typically included so as to improve its linear programming relaxation and overall solution time. Below we present a formulation identical to the one published by \cite{Castro}, but with slight modeling changes to make it amenable to a State Task Network (STN) representation \citep{lappas}. 
 
-\section{CBMN}
-This model is best. Best model ever.
 \begin{align}
 &\min_{\substack{W, T, B, \\ U, S, G, z}} \; z &&\\
 \text{s.t.} \; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}) && \\
@@ -24,21 +24,26 @@ This model is best. Best model ever.
 \end{aligned} \\
 &\begin{aligned}
 	&\sum_{i \in \mathcal{I}_j} \sum_{\substack{n' \in \mathcal{N} : \\ \{ n' \ge n\}}} \sum_{n'' \in \mathcal{N}_{n'}^{+}} \left(\alpha_i W_{in'n''} + \beta_i B_{in'n''} \right) &&\le T_N - T_n  \\ & &&\forall j \in \mathcal{J}, \forall n \in \mathcal{N} \\
-\end{aligned} \\
+\end{aligned} \label{castroTight}\\
 	&T_N = H &&\\
-	& S_{sN} \ge D_s  \qquad \forall s \in \mathcal{S} && \\
-	& 0 \le G_{jn} \le 1 \qquad \forall j \in \mathcal{J}, \forall n \in \mathcal{N} && \\
-	& 0 \le S_{sn} \le S_{s}^{\text{max}} \qquad \forall s \in \mathcal{S}, n \in \mathcal{N} && \\
-	& 0 \le U_{un} \le U_{u}^{\text{max}} \qquad \forall u \in \mathcal{U}, n \in \mathcal{N} && \\
-	& W_{inn'} = 0 \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} \backslash \mathcal{N}_{n}^+ &&\\
-	& B_{inn'} = 0 \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} \backslash \mathcal{N}_{n}^+ &&\\
+	& S_{sN} \ge D_s  \qquad \qquad \forall s \in \mathcal{S} && \\
+	& 0 \le G_{jn} \le 1 \qquad \qquad \forall j \in \mathcal{J}, \forall n \in \mathcal{N} && \\
+	& 0 \le S_{sn} \le S_{s}^{\text{max}} \qquad \qquad \forall s \in \mathcal{S}, n \in \mathcal{N} && \\
+	& 0 \le U_{un} \le U_{u}^{\text{max}} \qquad \qquad \forall u \in \mathcal{U}, n \in \mathcal{N} && \\
+	& W_{inn'} = 0 \qquad \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} \backslash \mathcal{N}_{n}^+ &&\\
+	& B_{inn'} = 0 \qquad \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} \backslash \mathcal{N}_{n}^+ &&\\
 	& T_1 = 0 && \\
-	& G_{jN} = 0 \qquad \forall j \in \mathcal{J} &&\\
-	& W_{inn'} \in {0,1} \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} &&
+	& G_{jN} = 0 \qquad \qquad \forall j \in \mathcal{J} &&\\
+	& W_{inn'} \in \{0,1\} \qquad \qquad \forall i \in \mathcal{I}, \forall n \in \mathcal{N}, \forall n' \in \mathcal{N} &&
 \end{align}
+\nomenclature{$\alpha$}{Fixed processing time}
+\nomenclature{$\beta$}{Variable processing time}
+\nomenclature{$\gamma$}{Fixed utility consumption}
+\nomenclature{$\delta$}{Utility consumption per batch}
+\nomenclature{$\rho$}{Proportion of state in the total production/consumption by a task}
 
-\section{MG}
-Second best model but big as fuck.
+\section{M\&G 2003}
+This model, described by \cite{Maravelias} is a Global Event-Based Model using State Task Network process representation, which accounts for variable batch sizes and processing times. It uses a continuous time representation that is common for all units. The assignment constraints are binary variables defined for tasks instead of units with different binary variables to denote whether a task starts, finishes or continues over event points. The start time of tasks are eliminated so time matching constraints are used for the finish times of tasks only. It also accounts for various storage policies.
 \begin{align}
 &\min \; z &&\\
 \text{s.t.}\; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}) && \\
@@ -78,11 +83,57 @@ Second best model but big as fuck.
 		  &U_{iun}^{O} = \gamma_{iu} Wf_{in} + \delta_{iu} Bf_{in} && \forall i, \forall u, \forall n
 \end{align}
 
-\section{GHM}
+\section{GHM 2009}
+This model, proposed by \cite{Gimenez} is a based on a continuous-time representation that does not require tasks to start or end exactly at a time point, thus reducing the number of time points needed to represent a solution. Processing units are modeled as being as being in different activity states to allow storage of input/output materials. Time variables for ``idle'' and ``storage'' periods of a unit are introduced to enable the matching between tasks and time points without big-M constraints. Material transfer variables explicitly account for unit connectivity. Inventory variables for storage in processing units are incorporated to model non-simultaneous and partial material transfers. 
+\begin{align}
+&\min \; z &&\\
+\text{s.t.}\; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}) && \\
+		  & z \ge (T_N - T_1)  &&\\
+		  & E_{jn} + W_{jn} + S_{jn}^I + S_{jn}^O = 1 && \forall j , n < N \\
+		  & E_{jn} = Z_{jn} + \sum_{i \in \mathcal{I}_j} X_{ijn} && \forall j, n < 1 \\
+		  & Z_{jn} = Z_{j(n-1)} + \sum_{i \in \mathcal{I}_j} X_{ij(n-1)} - \sum_{i \in \mathcal{I}_j} Y_{ijn} && \forall j, n > 1 \\
+		  & \bar{T}_{jn}^{\text{LB}} \le H \sum_{i \in (\mathcal{I}_j \backslash \mathcal{I}^\text{CZW})} X_{ijn} &&\forall j, n < N \\ 
+		  & \bar{T}_{jn}^{\text{EE}} \le H \sum_{i \in (\mathcal{I}_j \backslash \mathcal{I}^\text{PZW})} Y_{ijn} &&\forall j, n > 1 \\
+		  & \bar{T}_{jn}^S \le H ( S_{jn}^I + S_{jn}^O ) && \forall j, n < N \\
+		  & T_{jn}^W \le H (W_{jn}) && \forall j, n < N \\
+&\begin{aligned}
+T_{n+1} - & T_n - H (1 - S_{jn}^I - S_{jn}^O - W_{jn}) \le \\  &\bar{T}_{jn}^S + \bar{T}_{jn}^W \le T_{n+1} - T_n  
+\end{aligned}&&\forall j, n < N \\
+&\begin{aligned}
+T_n \ge \sum_{1 < n' \le n} &\sum_{i \in \mathcal{I}_j} (a_{ij} Y_{ijn'} + b _{ij} B_{ijn'}^E) \\ &+ \sum_{1 < n' \le n} \bar{T}_{jn'}^{\text{EE}} + \sum_{n' < n} (\bar{T}_{jn'}^{\text{LB}} + \bar{T}_{jn'}^{\text{S}} + \bar{T}_{jn'}^{\text{W}})
+\end{aligned} && \forall j, n > 1 \\
+&\begin{aligned}
+H - T_n \ge &\sum_{1 < n' \le n} \sum_{i \in \mathcal{I}_j} (a_{ij} X_{ijn'} + b _{ij} B_{ijn'}^S) \\ &+ \sum_{n' \ge n} \bar{T}_{jn'}^{\text{EE}} + \sum_{n \le n' < N} (\bar{T}_{jn'}^{\text{LB}} + \bar{T}_{jn'}^{\text{S}} + \bar{T}_{jn'}^{\text{W}})
+\end{aligned}  && \forall j, n > 1 \\
+&\begin{aligned}
+\sum_{n > 1} \bar{T}_{jn}^{\text{EE}} &+ \sum_{n<N}(\bar{T}_{jn}^\text{LB} + \bar{T}_{jn}^{\text{S}} + \bar{T}_{jn}^\text{W}) \\ &+\sum_{n>1} \sum_{i \in \mathcal{I}_j} (a_{ij} Y _{ijn} + b_{ij} B_{ijn}^\text{E}) = H
+\end{aligned} && \forall j \\
+	& \beta_{ij}^\text{MIN} Y_{ijn} \le B_{ijn}^E  \le \beta_{ij}^\text{MAX} Y_{ijn} && \forall i, j \in \mathcal{J}_i, n > 1 \\
+	& B_{ijn}^{\text{S}} \le \beta_{ij}^{\text{MAX}} X_{ijn} && \forall i, j \in \mathcal{J}_i, n < N \\
+	& \sum_{i \in \mathcal{I}_j} B_{ijn}^{\text{P}} \le \max_{i \in \mathcal{I}_j} \{ \beta_{ij}^{\text{MAX}}\} Z_{jn} && \forall j, n \\
+	& B_{ijn}^\text{S} + B_{ijn}^\text{P} = B_{ij(n+1)}^\text{P} B_{ij(n+1)}^\text{E} && \forall i, j \in \mathcal{J}_i, n < N \\
+&\begin{aligned}
+I_{mkn}^S &= I_{mk(n-1)}^S - \sum_{j \in \mathcal{J}_k} F_{mkjn}^{\text{VU}} - \sum_{k' \in \mathcal{K}_k} F_{mkk'n}^{\text{VV}}   \\ &+ \sum_{j \in \mathcal{J}_k} F_{mjkn}^{\text{UV}} + \sum_{k' \in \mathcal{K}_k} F_{mk'kn}^{\text{VV}} \\
+\end{aligned} && \forall m \notin (\mathcal{M}^{\text{NIS}} \cup \mathcal{M}^\text{ZW}), k \in \mathcal{K}_m , n \\
+	& I_{mkn}^\text{S} \le S_{mk}^{\text{MAX}} && \forall m, k \in \mathcal{K}^\text{D}, n>1 \\
+	& \sum_{m \in \mathcal{M}_k} S_{mkn}^{S} \le 1 && \forall k \in \mathcal{K}^S, n > 1 \\
+&\begin{aligned}
+I_{mjn}^\text{I} = &I_{mj(n-1)}^{\text{I}} + \sum_{k \in (\mathcal{K}_j \cap \mathcal{K}_m)} F_{mkjn}^{\text{VU}}  \\ &+  \sum_{j' \in \mathcal{J}_j} F_{mj'jn}^{\text{UU}} + \sum_{i \in (\mathcal{I}_j \cap \mathcal{I}_m^C)} \sum \rho_{im} B_{ijn}^\text{S}
+\end{aligned} && \forall m, j, n \\
+& \sum_{m \in \mathcal{M}} I^{\text{I}}_{mjn} \le \max_i \{\beta_{i,j}^{\text{MAX}} S_{jn}^{\text{I}} \} && \forall j, n < N \\
+&\begin{aligned}
+I_{mjn}^\text{O} &= I_{mj(n-1)}^\text{O} + \sum_{i \in (\mathcal{I}_j \cap \mathcal{I}_m^p)} \rho_{im} B_{ijn}^\text{E}  \\ &- \sum_{k \in (\mathcal{K}_j \cap \mathcal{K}_m)} F^{UV}_{mjkn} - \sum_{j' \in \mathcal{J}_j} F^{UU}_{mjj'n}
+\end{aligned}  &&\forall m, j , n > 1 \\
+&\sum_{m \ in \mathcal{M}} I_{mjn}^\text{O} \le \max_i \{\beta_{ij}^{\text{MAX}}\} S_{jn}^\text{O} && \forall j, n < N \\
+&\begin{aligned}
+Q_{rn} &= Q_{r(n-1)} +\\ &\sum_{i \in \mathcal{I}_r} \sum_{j \in \mathcal{J}_i} [\gamma_{ijr} (X_{ijn} - Y_{ijn}) + g_{ijr} (B_{ijn}^S - B_{ijn}^E)] 
+\end{aligned}&& \forall r, n \\
+&Q_{rn} \le \rho_r^\text{MAX} &&\forall r, n \\
+&\sum_{j \in \mathcal{K}_m} I_{mkn}^\text{S} \ge d_m &&\forall n \in \mathcal{M}^S, n = N
+\end{align}
 
-
-\section{IF}
-Ierapetroiyadocjhoueotiou 
+\section{I\&F 1998}
+This model \citep{Ierapetritou} was the first introduction of the concept of event points which correspond to a sequence of time instances located along the time axis of each unit. The location of event points is different for each unit, allowing different tasks to start at different times in each unit for the same event point. The timings of tasks are accounted through special sequencing constraints involving big-M constraints. The resulting model requires less event points compared to corresponding global or slot-based methods. 
 \begin{align}
 &\min \; z &&\\
 \text{s.t.}\; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}  -\sum_{i \in \mathcal{I}_{s}^p}\sum_{j \in \mathcal{J}_{i}} B_{iN}) && \\
@@ -105,7 +156,8 @@ Ierapetroiyadocjhoueotiou
 \end{align}
 
 \section{SK}
-Shit model
+This model \citep{Karimi} considers a synchronous slot-based time representation where the time horizon is divided into multiple time slots of varying lengths. It uses generalized recipe diagrams for process representation, wherein a storage task is used to model the mixing and splitting of the same material streams. Tasks are allowed to continue processing over multiple time slots. Tasks are allowed to finish before the end of the time slot, making the model inherently similar to the global event-based models, except for the differences in accounting the various balances. No resources other than materials and equipment are considered, hence it cannot support instances with utilities.
+
 \begin{align}
 &\min \; z &&\\
 \text{s.t.}\; &z \ge \sum_{s\in \mathcal{S}} P_s (S_{s0} - S_{sN}) && \\

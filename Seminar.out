@@ -5,18 +5,18 @@
 \BOOKMARK [1][-]{section.1.1}{Parameter uncertainty in process scheduling}{chapter.1}% 5
 \BOOKMARK [0][-]{chapter.2}{Problem Statement?}{}% 6
 \BOOKMARK [0][-]{chapter.3}{Scheduling models used}{}% 7
-\BOOKMARK [1][-]{section.3.1}{CBMN}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{MG}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.3}{GHM}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.4}{IF}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.1}{CBMN 2004}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{M\046G 2003}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.3}{GHM 2009}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.4}{I\046F 1998}{chapter.3}% 11
 \BOOKMARK [1][-]{section.3.5}{SK}{chapter.3}% 12
 \BOOKMARK [0][-]{chapter.4}{GUI Design}{}% 13
-\BOOKMARK [1][-]{section.4.1}{Schematic of communication}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.2}{Instance structure}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.3}{Instance object}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.1}{Instance structure}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.2}{Instance object}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.3}{Overall scheduling process flow}{chapter.4}% 16
 \BOOKMARK [1][-]{section.4.4}{Instance builder}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.5}{Submission page}{chapter.4}% 18
 \BOOKMARK [0][-]{chapter.5}{Case Study}{}% 19
 \BOOKMARK [1][-]{section.5.1}{Instance description}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{Adding instance to webtool}{chapter.5}% 21
-\BOOKMARK [0][-]{section*.19}{References}{}% 22
+\BOOKMARK [1][-]{section.5.2}{Defining instance parameters}{chapter.5}% 21
+\BOOKMARK [0][-]{section*.21}{References}{}% 22

@@ -1,5 +1,18 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Castro et~al.}{2004}]{Castro}
+Castro, P.~M., Barbosa-Póvoa, A.~P., Matos, H.~A., and Novais, A.~Q.
+\newblock Simple Continuous-Time Formulation for Short-Term Scheduling of Batch
+  and Continuous Processes.
+\newblock {\em Industrial \& Engineering Chemistry Research}, 43(1):105--118
+  (2004).
+
+\bibitem[\protect\astroncite{Gim\'enez et~al.}{2009}]{Gimenez}
+Gim\'enez, D.~M., Henning, G.~P., and Maravelias, C.~T.
+\newblock A novel network-based continuous-time representation for process
+  scheduling: Part I. Main concepts and mathematical formulation.
+\newblock {\em Computers \& Chemical Engineering}, 33(9):1511 -- 1528 (2009).
+
 \bibitem[\protect\astroncite{Harjunkoski et~al.}{2014}]{HARJUNKOSKI2014161}
 Harjunkoski, I., Maravelias, C.~T., Bongers, P., Castro, P.~M., Engell, S.,
   Grossmann, I.~E., Hooker, J., Méndez, C., Sand, G., and Wassick, J.
@@ -7,6 +20,13 @@ Harjunkoski, I., Maravelias, C.~T., Bongers, P., Castro, P.~M., Engell, S.,
   solution methods.
 \newblock {\em Computers \& Chemical Engineering}, 62(Supplement C):161 -- 193
   (2014).
+
+\bibitem[\protect\astroncite{Ierapetritou and Floudas}{1998}]{Ierapetritou}
+Ierapetritou, M.~G. and Floudas, C.~A.
+\newblock Effective Continuous-Time Formulation for Short-Term Scheduling. 1.
+  Multipurpose Batch Processes.
+\newblock {\em Industrial \& Engineering Chemistry Research}, 37(11):4341--4359
+  (1998).
 
 \bibitem[\protect\astroncite{Janak et~al.}{2007}]{JANAK2007171}
 Janak, S.~L., Lin, X., and Floudas, C.~A.
@@ -39,10 +59,23 @@ Lin, X., Janak, S.~L., and Floudas, C.~A.
 \newblock {\em Computers \& Chemical Engineering}, 28(6):1069 -- 1085 (2004),
   FOCAPO 2003 Special issue.
 
+\bibitem[\protect\astroncite{Maravelias and Grossmann}{2003}]{Maravelias}
+Maravelias, C.~T. and Grossmann, I.~E.
+\newblock New General Continuous-Time State−Task Network Formulation for
+  Short-Term Scheduling of Multipurpose Batch Plants.
+\newblock {\em Industrial \& Engineering Chemistry Research}, 42(13):3056--3074
+  (2003).
+
 \bibitem[\protect\astroncite{M\'endez et~al.}{2006}]{MENDEZ}
 M\'endez, C.~A., Cerd\'a, J., Grossmann, I.~E., Harjunkoski, I., and Fahl, M.
 \newblock State-of-the-art review of optimization methods for short-term
   scheduling of batch processes.
 \newblock {\em Computers \& Chemical Engineering}, 30(6):913 -- 946 (2006).
+
+\bibitem[\protect\astroncite{Sundaramoorthy and Karimi}{2005}]{Karimi}
+Sundaramoorthy, A. and Karimi, I.
+\newblock A simpler better slot-based continuous-time formulation for
+  short-term scheduling in multipurpose batch plants.
+\newblock {\em Chemical Engineering Science}, 60(10):2679 -- 2702 (2005).
 
 \end{thebibliography}

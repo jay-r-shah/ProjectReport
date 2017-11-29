@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.10)  24 NOV 2017 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.10)  29 NOV 2017 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1363,11 +1363,7 @@ Chapter 1.
 [1
 
 
-]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
-) (./Chapters/2.ProblemStatement.tex
+]) (./Chapters/2.ProblemStatement.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
@@ -1411,6 +1407,18 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+Overfull \hbox (3.31187pt too wide) in paragraph at lines 133--133
+[] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1420,14 +1428,10 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[8]) (./Chapters/4.GUIDesign.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
@@ -1435,25 +1439,8 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Chapter 4.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
-(c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
- [10
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
 
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
@@ -1461,22 +1448,17 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ¢ in font cmr12!
- <Images/GUIDesign.png, id=356, 723.6636pt x 332.442pt>
-File: Images/GUIDesign.png Graphic file (type png)
-
-<use Images/GUIDesign.png>
-Package pdftex.def Info: Images/GUIDesign.png used on input line 150.
-(pdftex.def)             Requested size: 452.9679pt x 208.08516pt.
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 169.
 
-) (./Chapters/5.CaseStudy.tex
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]) (./Chapters/4.GUIDesign.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
@@ -1484,22 +1466,103 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
+Chapter 4.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
+(c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+ [13
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[14]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+ <Images/Communication.png, id=440, 813.7602pt x 283.7802pt>
+File: Images/Communication.png Graphic file (type png)
+
+<use Images/Communication.png>
+Package pdftex.def Info: Images/Communication.png used on input line 157.
+(pdftex.def)             Requested size: 452.9679pt x 157.96318pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./Images/GUIDesign.png>]
+[15] <Images/ParameterObjectiveInput.png, id=480, 780.516pt x 132.9768pt>
+File: Images/ParameterObjectiveInput.png Graphic file (type png)
+
+<use Images/ParameterObjectiveInput.png>
+Package pdftex.def Info: Images/ParameterObjectiveInput.png used on input line 
+166.
+(pdftex.def)             Requested size: 452.9679pt x 77.17326pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./Images/Communication.png> <./Images/ParameterObjectiveInput.png>]
+<Images/GUIDesign.png, id=488, 723.6636pt x 332.442pt>
+File: Images/GUIDesign.png Graphic file (type png)
+
+<use Images/GUIDesign.png>
+Package pdftex.def Info: Images/GUIDesign.png used on input line 203.
+(pdftex.def)             Requested size: 452.9679pt x 208.08516pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17] <Images/SelectModel.png, id=497, 501.875pt x 315.1775pt>
+File: Images/SelectModel.png Graphic file (type png)
+
+<use Images/SelectModel.png>
+Package pdftex.def Info: Images/SelectModel.png used on input line 229.
+(pdftex.def)             Requested size: 362.37569pt x 227.58168pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18 <./Images/GUIDesign.png>]) (./Chapters/5.CaseStudy.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19 <./Images/SelectModel.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
 Chapter 5.
-<Images/STN.png, id=435, 947.79094pt x 488.57532pt>
+<Images/STN.png, id=526, 947.79094pt x 488.57532pt>
 File: Images/STN.png Graphic file (type png)
  <use Images/STN.png>
 Package pdftex.def Info: Images/STN.png used on input line 9.
@@ -1509,42 +1572,43 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
-<Images/DefineUnits.png, id=440, 702.625pt x 331.2375pt>
+<Images/DefineUnits.png, id=529, 702.625pt x 331.2375pt>
 File: Images/DefineUnits.png Graphic file (type png)
 
 <use Images/DefineUnits.png>
-Package pdftex.def Info: Images/DefineUnits.png used on input line 59.
+Package pdftex.def Info: Images/DefineUnits.png used on input line 56.
 (pdftex.def)             Requested size: 452.9679pt x 213.54797pt.
 
-<Images/DefineStates.png, id=443, 923.45pt x 545.03625pt>
+<Images/DefineStates.png, id=532, 923.45pt x 545.03625pt>
 File: Images/DefineStates.png Graphic file (type png)
 
 <use Images/DefineStates.png>
-Package pdftex.def Info: Images/DefineStates.png used on input line 70.
+Package pdftex.def Info: Images/DefineStates.png used on input line 67.
 (pdftex.def)             Requested size: 452.9679pt x 267.34454pt.
- [15
 
- <./Images/STN.png>]
+Underfull \vbox (badness 2343) has occurred while \output is active []
 
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+ [21
 
-[16 <./Images/DefineUnits.png>]
-<Images/DefineTasks.png, id=457, 1003.75pt x 663.47874pt>
+ <./Images/STN.png>] <Images/DefineTasks.png, id=540, 1003.75pt x 663.47874pt>
 File: Images/DefineTasks.png Graphic file (type png)
 
 <use Images/DefineTasks.png>
-Package pdftex.def Info: Images/DefineTasks.png used on input line 81.
+Package pdftex.def Info: Images/DefineTasks.png used on input line 77.
 (pdftex.def)             Requested size: 452.9679pt x 299.41307pt.
 
-<Images/DefineObjective.png, id=458, 501.875pt x 170.6375pt>
+<Images/DefineObjective.png, id=543, 501.875pt x 170.6375pt>
 File: Images/DefineObjective.png Graphic file (type png)
 
 <use Images/DefineObjective.png>
-Package pdftex.def Info: Images/DefineObjective.png used on input line 90.
+Package pdftex.def Info: Images/DefineObjective.png used on input line 89.
 (pdftex.def)             Requested size: 362.37569pt x 123.213pt.
+
+<Images/Prices.png, id=546, 502.87875pt x 823.075pt>
+File: Images/Prices.png Graphic file (type png)
+ <use Images/Prices.png>
+Package pdftex.def Info: Images/Prices.png used on input line 98.
+(pdftex.def)             Requested size: 362.37569pt x 593.10335pt.
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
@@ -1552,33 +1616,56 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <./Images/DefineStates.png>]
+[22]
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./Images/DefineTasks.png> <./Images/DefineObjective.png>]
+[23 <./Images/DefineUnits.png> <./Images/DefineStates.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <./Images/DefineTasks.png> <./Images/DefineObjective.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./Images/Prices.png>]
 No file Seminar.nls.
 (./Seminar.bbl
 Missing character: There is no Ã in font cmr12!
+Missing character: There is no ³ in font cmr12!
+Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
-) [19
+ [26
 
 
 ]
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./Seminar.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `Seminar.out' has not changed.
-(rerunfilecheck)             Checksum: 7CE3198ABF007112EB53CDFF4E4DBF66;1242.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 093B572EFF551F1143CDCB9D98516DDB;1277.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  )
 (\end occurred inside a group at level 1)
@@ -1586,13 +1673,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
 ### semi simple group (level 1) entered at line 98 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31383 strings out of 493013
- 581105 string characters out of 6136993
- 816293 words of memory out of 5000000
- 34162 multiletter control sequences out of 15000+600000
- 13668 words of font info for 51 fonts, out of 8000000 for 9000
+ 31470 strings out of 493013
+ 582543 string characters out of 6136993
+ 799027 words of memory out of 5000000
+ 34204 multiletter control sequences out of 15000+600000
+ 13837 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,20n,54p,10372b,1314s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,20n,54p,10372b,1334s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
 12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c
 :/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive
@@ -1607,12 +1694,13 @@ onts/cm/cmr6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtt10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Seminar.pdf (21 pages, 606344 bytes).
+fonts/cm/cmtt10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
+10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Seminar.pdf (29 pages, 732550 bytes).
 PDF statistics:
- 590 PDF objects out of 1000 (max. 8388607)
- 532 compressed objects within 6 object streams
- 241 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 627 compressed objects within 7 object streams
+ 281 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

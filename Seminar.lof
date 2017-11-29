@@ -2,16 +2,20 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Instance JSON\relax }}{11}{figure.caption.4}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Unit JSON object\relax }}{11}{figure.caption.5}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces State JSON object\relax }}{12}{figure.caption.6}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Utility JSON object\relax }}{12}{figure.caption.7}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Task JSON object\relax }}{13}{figure.caption.8}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Order (demand) JSON object\relax }}{13}{figure.caption.9}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Instance builder elements}}{14}{figure.caption.10}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Instance JSON\relax }}{14}{figure.caption.4}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Unit JSON object\relax }}{14}{figure.caption.5}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces State JSON object\relax }}{14}{figure.caption.5}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Utility JSON object\relax }}{14}{figure.caption.6}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Order (demand) JSON object\relax }}{14}{figure.caption.6}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Task JSON object\relax }}{15}{figure.caption.7}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Overall process flow\relax }}{16}{figure.caption.8}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Parameter and objective input\relax }}{16}{figure.caption.9}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Instance builder elements}}{18}{figure.caption.10}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Model selection\relax }}{19}{figure.caption.11}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces State task network for the example instance\relax }}{15}{figure.caption.12}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Units input into webtool\relax }}{16}{figure.caption.15}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces States input into webtool\relax }}{17}{figure.caption.16}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Tasks input into webtool\relax }}{18}{figure.caption.17}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Objective selection\relax }}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces State task network for the example instance\relax }}{21}{figure.caption.13}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Units input into webtool\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces States input into webtool\relax }}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Tasks input into webtool\relax }}{24}{figure.caption.18}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Objective selection\relax }}{24}{figure.caption.19}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Horizon and price input\relax }}{25}{figure.caption.20}

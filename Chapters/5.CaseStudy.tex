@@ -2,7 +2,7 @@
 \thispagestyle{plain}
 
 \section{Instance description}
-In this chapter, we present a case study of a well known scheduling instance from \cite{KONDILI1993211}, optimized using the described online tool. The production of two products 1 and 2 from three feed stocks A, B and C takes place according to the STN representation given in Fig. \ref{fig:STN}. This instance has four intermediate states and five tasks.
+In this chapter, we present a case study of a well known scheduling instance from \cite{KONDILI1993211}, optimized for the deterministic case using the described online tool. The production of two products 1 and 2 from three feed stocks A, B and C takes place according to the STN representation given in Fig. \ref{fig:STN}. This instance has four intermediate states and five tasks.
 
 \begin{figure}[htbp]
 \centering
@@ -13,7 +13,7 @@ In this chapter, we present a case study of a well known scheduling instance fro
 
 Table \ref{tab:statelevels} shows the state maximum capacity and initial load data for the problem. The available unit, task compatibility and processing time data is given in Table \ref{tab:tasks}.
 
-\begin{table}[htbp]
+\begin{table}[htb]
 \centering
 \caption{Problem data (states)}
 \label{tab:statelevels}
@@ -32,7 +32,7 @@ Product 2      & 1000              & -                     & 10                 
 \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[htb]
 \centering
 \caption{Problem data (units \& tasks)}
 \label{tab:tasks}
@@ -49,45 +49,60 @@ Separation   &              &             &                &              &     
 \end{tabular}
 \end{table}
 
-\section{Adding instance to webtool}
+\section{Defining instance parameters}
 \subsection{Defining units}
-
-Unit names and maximum capacities from Table \ref{tab:tasks} are input into the units table of the web tool as shown in Fig. \ref{fig:defUnits}
-
-\begin{figure}[htbp]
+\begin{figure}[htb]
 \centering
 \includegraphics[width=\linewidth]{Images/DefineUnits.png}
 \caption{Units input into webtool}
 \label{fig:defUnits}
 \end{figure}
+Unit names and maximum capacities from Table \ref{tab:tasks} are input into the units table of the web tool as shown in Fig. \ref{fig:defUnits}.
+
+
 
 \subsection{Defining states}
-
-State names, maximum storage capacities and initial levels from Table \ref{tab:statelevels} are input into the units table of the web tool as shown in Fig. \ref{fig:defStates}.
-
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{Images/DefineStates.png}
 \caption{States input into webtool}
 \label{fig:defStates}
 \end{figure}
+State names, maximum storage capacities and initial levels from Table \ref{tab:statelevels} are input into the units table of the web tool as shown in Fig. \ref{fig:defStates}.
+
 
 \subsection{Defining tasks}
-
-This instance does not involve utilities. Hence we can skip utilities input. For each task in Table \ref{tab:tasks}, the values of $\alpha$ and $\beta$ are input after selecting the appropriate compatible unit(s). Fig. \ref{fig:defTasks} shows the tasks table after successful input of tasks Heating and Reaction 1.
-
-\begin{figure}[htbp]
+\begin{figure}[htb]
 \centering
 \includegraphics[width=\linewidth]{Images/DefineTasks.png}
 \caption{Tasks input into webtool}
 \label{fig:defTasks}
 \end{figure}
 
-\subsection{Selecting Objective}
+This instance does not involve utilities. Hence we can skip utilities input. For each task in Table \ref{tab:tasks}, the values of $\alpha$ and $\beta$ are input after selecting the appropriate compatible unit(s). Fig. \ref{fig:defTasks} shows the tasks table after successful input of tasks Heating and Reaction 1.
 
-\begin{figure}[htbp]
+
+\subsection{Objective}
+
+\begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\linewidth]{Images/DefineObjective.png}
 \caption{Objective selection}
 \label{fig:selectObjective}
 \end{figure}
+
+For this case, we will consider the case of maximization of profit. After successful completion of the tasks input, the objective selection options are available as shown in Fig. \ref{fig:selectObjective}. After clicking on ``Maximize profit'', the horizon and price input screen appears as shown in Fig. \ref{fig:prices}. The instance definition is complete after input of horizon and price data for Product 1 and Product 2 from Table \ref{tab:statelevels}. We will consider an 8 hour horizon for this case study.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\linewidth]{Images/Prices.png}
+\caption{Horizon and price input}
+\label{fig:prices}
+\end{figure}
+
+\subsection{Model and event points}
+
+
+
+
+

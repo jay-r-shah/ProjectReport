@@ -5,31 +5,24 @@
 \contentsline {section}{\numberline {1.1}Parameter uncertainty in process scheduling}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2.}Problem Statement?}{3}{chapter.2}
 \contentsline {chapter}{\numberline {3.}Scheduling models used}{4}{chapter.3}
-\contentsline {section}{\numberline {3.1}CBMN}{4}{section.3.1}
-\contentsline {section}{\numberline {3.2}MG}{5}{section.3.2}
-\contentsline {section}{\numberline {3.3}GHM}{7}{section.3.3}
-\contentsline {section}{\numberline {3.4}IF}{7}{section.3.4}
-\contentsline {section}{\numberline {3.5}SK}{8}{section.3.5}
-\contentsline {chapter}{\numberline {4.}GUI Design}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Schematic of communication}{10}{section.4.1}
-\contentsline {section}{\numberline {4.2}Instance structure}{10}{section.4.2}
-\contentsline {section}{\numberline {4.3}Instance object}{10}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Units}{11}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}States}{12}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Utilities}{12}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Tasks}{12}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Orders}{12}{subsection.4.3.5}
-\contentsline {section}{\numberline {4.4}Instance builder}{12}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Error messages/assertions}{12}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}List of errors}{12}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Submission page}{12}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Options structure}{12}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}List of errors/assertions}{12}{subsection.4.5.2}
-\contentsline {chapter}{\numberline {5.}Case Study}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Instance description}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Adding instance to webtool}{15}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Defining units}{15}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Defining states}{15}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Defining tasks}{17}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Selecting Objective}{17}{subsection.5.2.4}
-\contentsline {chapter}{References}{19}{section*.19}
+\contentsline {section}{\numberline {3.1}CBMN 2004}{4}{section.3.1}
+\contentsline {section}{\numberline {3.2}M\&G 2003}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}GHM 2009}{7}{section.3.3}
+\contentsline {section}{\numberline {3.4}I\&F 1998}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}SK}{11}{section.3.5}
+\contentsline {chapter}{\numberline {4.}GUI Design}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Instance structure}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Instance object}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Overall scheduling process flow}{16}{section.4.3}
+\contentsline {section}{\numberline {4.4}Instance builder}{18}{section.4.4}
+\contentsline {section}{\numberline {4.5}Submission page}{18}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Number of event points}{18}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Uncertainty frameworks}{19}{subsection.4.5.2}
+\contentsline {chapter}{\numberline {5.}Case Study}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Instance description}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Defining instance parameters}{21}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Defining units}{21}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Defining states}{22}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Defining tasks}{22}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Objective}{22}{subsection.5.2.4}
+\contentsline {chapter}{References}{26}{section*.21}
