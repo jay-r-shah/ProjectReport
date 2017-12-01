@@ -226,18 +226,12 @@ Error messages are displayed to ensure that the user input is valid and the inst
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.8\linewidth]{Images/SelectModel.png}
-\caption{Model selection}
+\includegraphics[width=0.8\linewidth]{Images/SelectModelUtilities.png}
+\caption{Model selection table for an instance involving utilities}
 \label{fig:selectModel}
 \end{figure}
 
 On successful completion, an instance becomes available for submission. A screenshot of the model selection table is shown in Fig. \ref{fig:selectModel}. The CBMN 2004 model is selected by default for both the deterministic and uncertain versions. The I\&F 1998 and S\&K 2005 models do not support instances with utilities involved.
-
-\subsection{Number of event points}
-
-Continuous-time formulations for short-term scheduling are based on a set of time points (unit specific or global), which are non-uniformly distributed along the scheduling horizon. A limitation of these approaches is that the number of time points required to represent the optimal schedule is unknown a priori, so multiple MILP models need to be solved to reach the optimal solution. A suitable strategy is to start by adopting a small number of event points and gradually increase this number and repeatedly solve the model until the objective values does not show an improvement.
-
-
 
 
 

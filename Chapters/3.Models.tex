@@ -1,6 +1,6 @@
 \chapter{Scheduling models used}
 \thispagestyle{plain}
-
+\label{chap:models}
 This chapter briefly describes the scheduling models supported by the online optimization tool. All the models are continuous time, mixed-integer linear models and can be readily solved with standard MILP optimization solvers. All models can account for two objectives: maximization of profit and minimization of makespan.
 
 \section{CBMN 2004}
@@ -155,7 +155,7 @@ This model \citep{Ierapetritou} was the first introduction of the concept of eve
 		     & T_{ijn}^s \le H &&  i \in \mathcal{I}, \forall j \in \mathcal{J}_i, n \in \mathcal{N}
 \end{align}
 
-\section{SK}
+\section{S\&K 2005}
 This model \citep{Karimi} considers a synchronous slot-based time representation where the time horizon is divided into multiple time slots of varying lengths. It uses generalized recipe diagrams for process representation, wherein a storage task is used to model the mixing and splitting of the same material streams. Tasks are allowed to continue processing over multiple time slots. Tasks are allowed to finish before the end of the time slot, making the model inherently similar to the global event-based models, except for the differences in accounting the various balances. No resources other than materials and equipment are considered, hence it cannot support instances with utilities.
 
 \begin{align}

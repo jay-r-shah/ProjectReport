@@ -4,7 +4,7 @@
 \section{Instance description}
 In this chapter, we present a case study of a well known scheduling instance from \cite{KONDILI1993211}, optimized for the deterministic case using the described online tool. The production of two products 1 and 2 from three feed stocks A, B and C takes place according to the STN representation given in Fig. \ref{fig:STN}. This instance has four intermediate states and five tasks.
 
-\begin{figure}[htbp]
+\begin{figure}[htb]
 \centering
 \fbox{\includegraphics[width=\linewidth]{Images/STN.png}}
 \caption{State task network for the example instance}
@@ -51,15 +51,13 @@ Separation   &              &             &                &              &     
 
 \section{Defining instance parameters}
 \subsection{Defining units}
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{Images/DefineUnits.png}
 \caption{Units input into webtool}
 \label{fig:defUnits}
 \end{figure}
 Unit names and maximum capacities from Table \ref{tab:tasks} are input into the units table of the web tool as shown in Fig. \ref{fig:defUnits}.
-
-
 
 \subsection{Defining states}
 \begin{figure}[htbp]
@@ -72,7 +70,7 @@ State names, maximum storage capacities and initial levels from Table \ref{tab:s
 
 
 \subsection{Defining tasks}
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{Images/DefineTasks.png}
 \caption{Tasks input into webtool}
@@ -84,7 +82,7 @@ This instance does not involve utilities. Hence we can skip utilities input. For
 
 \subsection{Objective}
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\linewidth]{Images/DefineObjective.png}
 \caption{Objective selection}
@@ -93,16 +91,46 @@ This instance does not involve utilities. Hence we can skip utilities input. For
 
 For this case, we will consider the case of maximization of profit. After successful completion of the tasks input, the objective selection options are available as shown in Fig. \ref{fig:selectObjective}. After clicking on ``Maximize profit'', the horizon and price input screen appears as shown in Fig. \ref{fig:prices}. The instance definition is complete after input of horizon and price data for Product 1 and Product 2 from Table \ref{tab:statelevels}. We will consider an 8 hour horizon for this case study.
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.8\linewidth]{Images/Prices.png}
 \caption{Horizon and price input}
 \label{fig:prices}
 \end{figure}
 
-\subsection{Model and event points}
+\section{Submission}
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\linewidth]{Images/SelectModel.png}
+\caption{Number of event points and model selection}
+\label{fig:selectModel}
+\end{figure}
 
+Once the instance is complete, the submit button in the control panel will be activated. Clicking the ``Submit'' button will display the model selection table as shown in Fig. \ref{fig:selectModel}. For the deterministic version, the five models described in Chapter \ref{chap:models} are available. The CBMN 2004 model is selected by default. 
 
+\subsection{Number of event points}
 
+Continuous-time formulations for short-term scheduling are based on a set of time points (unit specific or global), which are non-uniformly distributed along the scheduling horizon. A limitation of these approaches is that the number of time points required to represent the optimal schedule is unknown a priori, so multiple MILP models need to be solved to reach the optimal solution. A suitable strategy is to start by adopting a small number of event points and gradually increase this number and repeatedly solve the model until the objective values does not show an improvement. For this particular instance, 5 event points result in the optimal schedule. Clicking the ``Submit'' on this page will add the instance to the processing queue.
+
+\section{Results}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{Images/Results.png}
+\caption{Model statistics and Gantt chart}
+\label{fig:results}
+\end{figure}
+
+Once the processing of the instance has completed, the ``Submission Status'' field on the control panel for the instance will change to ``Results Available''. Clicking on the ``Results'' button will show model statistics and the optimized Gantt Chart as shown in Fig. \ref{fig:results}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{Images/ProductInventory.png}
+\caption{Product 1 \& Product 2 inventory vs. time}
+\label{fig:stateInventory}
+\end{figure}
+
+A proven optimal solution is found fairly quickly by CPLEX. The objective value reported by the tool is the same as that reported in previous literature for this instance. Inventory level charts for Product 1 and Product 2, (Fig. \ref{fig:stateInventory}) show that around 70 units of Product 1 and 80 units of Product 2 will be manufactured.
+
+A number of different scenarios 
 
