@@ -123,14 +123,26 @@ Continuous-time formulations for short-term scheduling are based on a set of tim
 
 Once the processing of the instance has completed, the ``Submission Status'' field on the control panel for the instance will change to ``Results Available''. Clicking on the ``Results'' button will show model statistics and the optimized Gantt Chart as shown in Fig. \ref{fig:results}.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{Images/ProductInventory.png}
-\caption{Product 1 \& Product 2 inventory vs. time}
-\label{fig:stateInventory}
-\end{figure}
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[width=\linewidth]{Images/ProductInventory.png}
+%\caption{Product 1 \& Product 2 inventory vs. time}
+%\label{fig:stateInventory}
+%\end{figure}
 
-A proven optimal solution is found fairly quickly by CPLEX. The objective value reported by the tool is the same as that reported in previous literature for this instance. Inventory level charts for Product 1 and Product 2, (Fig. \ref{fig:stateInventory}) show that around 70 units of Product 1 and 80 units of Product 2 will be manufactured.
+A proven optimal solution is found fairly quickly by CPLEX. The objective value reported by the tool is the same as that reported in previous literature for this instance. Inventory level charts for Product 1 and Product 2 show that around 70 units of Product 1 and 80 units of Product 2 will be manufactured.
 
-A number of different scenarios 
+\section{Handling uncertain parameters with robust optimization}
+In this section, we will consider uncertainty in fixed processing time ($\alpha$). The parameters are allowed to vary in a decision-dependent polyhedron. The original $\alpha_i$ values specified by the user are regarded as nominal values $\alpha_i^0$. The maximum allowable magnitude of each parameter's deviation from its nominal value is a percentage of the latter (e.g. $\pm$ 10\% of its nominal value).
+
+In addition, we also consider one general affine correlation to postulate an upper limit on the cumulative processing time deviation among all tasks to be performed. The quantities $\xi \in [0,1]$ and $\phi \in [0,1]$ are used to parameterize the uncertainty set. For low, medium and high uncertainty levels, the values of $\xi$ and $\phi$ are set as follows:
+\begin{enumerate}
+\item \textbf{Low:} $\xi = 0.1$ , $\phi = 0.0$
+\item \textbf{Medium:} $\xi = 0.2$ , $\phi = 0.5$
+\item \textbf{High:} $\xi = 0.3$ , $\phi = 1.0$
+\end{enumerate}
+
+
+
+\subsection{Static robust optimization}
 

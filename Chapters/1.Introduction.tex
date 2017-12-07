@@ -10,9 +10,30 @@ Scheduling problems arise in almost any type of industrial production facilities
 \item When to execute the production tasks?
 \end{itemize}
 
-For batch processes, short-term scheduling deals with the allocation of a set of limited resources over time to manufacture one or more products following a batch recipe \citep{MENDEZ}. There has been significant development of optimization approaches to scheduling over the last two decades. The first mathematical programming approach the scheduling of multi-purpose, multi-product batch plants was proposed by \cite{KONDILI1993211}. This approach introduces the state task network (STN) representation where the process is described as a bipartite graph consisting of states and tasks.
+For batch processes, short-term scheduling deals with the allocation of a set of limited resources over time to manufacture one or more products following a batch recipe \citep{MENDEZ}. Existing approaches rely on network-bsaed representation. Under the state-task network representation \citep{KONDILI1993211}, a task node is linked to a state node via an arc if the state is consumed or produced by the task. An example of a state task network is given in Fig. \ref{fig:STN}.
 
-\section{Parameter uncertainty in process scheduling}
+Alternatively, if units, states (materials) and utilities are viewed as resources consumed/produced by the task, then task-nodes are linked to resource-nodes, and the representation is referred to as a resource-task network (Fig. \ref{fig:RTN}). 
+
+\begin{figure}[htb]
+\centering
+\fbox{\includegraphics[width=\linewidth]{Images/RTN.jpg}}
+\caption{Resource task network}
+\label{fig:RTN}
+\end{figure}
+
+There has been significant development of optimization approaches to scheduling over the last two decades. Early attempts to establish general scheduling algorithms were based on the discretization of the time horizon into a number of intervals of equal and fixed duration. In such a model, all system events are forced to coincide with one of the interval boundaries. 
+Such a mathematical programming approach for the scheduling of multi-purpose, multi-product batch plants was proposed by \cite{KONDILI1993211}. The main limitation of this approach resulted from the fact that the duration of all processing tasks must be a multiple of the discretization time, which implied a formulation with a high number of decision variables for reasonable accuracy for realistic applications.
+\cite{SHAH1993229} developed specific solution techniques for the proposed formulation so as to reduce the computational time. However, the discretization problem was still present. This encouraged work towards the development of efficient methods based on continuous-time representations, which was first introduced for scheduling problems by \cite{SAHINIDIS199185}.
+
+Subsequently, several continuous time models for the scheduling of batch plants were developed over the next two decades. We describe five of them in Chapter \ref{chap:models}:
+\begin{enumerate}
+\item \cite{Castro}
+\item \cite{Maravelias}
+\item \cite{Gimenez}
+\item \cite{Ierapetritou}
+\item \cite{Karimi}
+\end{enumerate}
+
 \label{uncertaintysection}
 In realistic scenarios, many of the parameters associated with scheduling are not known exactly. Parameters such as processing time, yields, prices, etc. can vary with respect to time and are subject to unexpected deviations. Robust optimization is an approach that has been suggested to mitigate these uncertainties while designing a schedule. Robust optimization seeks to generate a solution that is immune to uncertainty by ensuring that it remains feasible for all possible realizations of the uncertain parameters from within a set chosen \emph{a priori} by the modeler.
 

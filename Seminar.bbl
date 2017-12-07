@@ -72,6 +72,19 @@ M\'endez, C.~A., Cerd\'a, J., Grossmann, I.~E., Harjunkoski, I., and Fahl, M.
   scheduling of batch processes.
 \newblock {\em Computers \& Chemical Engineering}, 30(6):913 -- 946 (2006).
 
+\bibitem[\protect\astroncite{Sahinidis and Grossmann}{1991}]{SAHINIDIS199185}
+Sahinidis, N. and Grossmann, I.
+\newblock MINLP model for cyclic multiproduct scheduling on continuous parallel
+  lines.
+\newblock {\em Computers \& Chemical Engineering}, 15(2):85 -- 103 (1991).
+
+\bibitem[\protect\astroncite{Shah et~al.}{1993}]{SHAH1993229}
+Shah, N., Pantelides, C., and Sargent, R.
+\newblock A general algorithm for short-term scheduling of batch
+  operations—II. Computational issues.
+\newblock {\em Computers \& Chemical Engineering}, 17(2):229 -- 244 (1993), An
+  International Journal of Computer Applications in Chemical Enginnering.
+
 \bibitem[\protect\astroncite{Sundaramoorthy and Karimi}{2005}]{Karimi}
 Sundaramoorthy, A. and Karimi, I.
 \newblock A simpler better slot-based continuous-time formulation for

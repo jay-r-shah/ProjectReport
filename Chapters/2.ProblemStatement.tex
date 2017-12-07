@@ -1,4 +1,36 @@
-\chapter{Problem Statement?}
+\chapter{Problem Statement}
 \thispagestyle{plain}
 
+
+\textbf{Indices} \\
+$i$ = tasks \\
+$j$ = units  \\
+$s$ = states  \\
+$u$ = utilities \\
+\textbf{Sets} \\
+$\mathcal{J} = $ Set of available processing tasks \\
+$\mathcal{S} = $ Set of states (materials) \\
+$\mathcal{S} = $ Set of utilities \\
+$\mathcal{I} = $ Set of processing tasks \\
+$\mathcal{I}_j = $ Set of processing tasks that can be performed in unit $j$\\
+$\mathcal{I}_s^p = $ Set of tasks that produce state $s$\\
+$\mathcal{I}_s^c = $ Set of tasks that consume state $s$\\
+$\mathcal{I}_u = $ Set of tasks that consume utility $u$\\
+$\mathcal{I}^{zw} = $ Set of tasks that produce a zero-wait state \\
+\textbf{Parameters} \\
+$\alpha_i = $ Fixed processing time of task $i$ \\
+$\beta_i = $ Processing time of task $i$ per unit batch \\
+$\gamma_{iu} = $ Fixed consumption of utility $u$ by task $i$ \\
+$\delta_{iu} = $ Consumption of utility $u$ by task $i$ per unit batch \\
+$\rho_{is} = $ proportion of state $s$ in the total production/consumption by task $i$ \\
+$B_i^{\text{min}} = $ minimum capacity for task $i$ in unit $j$ \\
+$B_i^{\text{max}} = $ maximum capacity for task $i$ in unit $j$ \\
+$U_u^{\text{max}} = $ maximum availability of utility $u$ \\
+$S_{s0} = $ Initial amount of state $s$ \\
+$S_{s}^{\text{max}} = $ maximum storage capacity for state $s$ \\
+$D_s = $ Demand of state $s$ at the end of horizon \\
+$P_s = $ Price of state $s$ \\
+$H = $ Horizon
+
+Given the above data for units, states, utilities, tasks, horizon and demands, a feasible schedule has to be obtained in order to either maximize profit within horizon $H$ or minimize the time taken to produce demands $D_s$ for states $s$.
 

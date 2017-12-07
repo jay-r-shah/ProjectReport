@@ -224,7 +224,7 @@ Error messages are displayed to ensure that the user input is valid and the inst
 
 \section{Submission page}
 
-\begin{figure}[htbp]
+\begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\linewidth]{Images/SelectModelUtilities.png}
 \caption{Model selection table for an instance involving utilities}
@@ -233,10 +233,19 @@ Error messages are displayed to ensure that the user input is valid and the inst
 
 On successful completion, an instance becomes available for submission. A screenshot of the model selection table is shown in Fig. \ref{fig:selectModel}. The CBMN 2004 model is selected by default for both the deterministic and uncertain versions. The I\&F 1998 and S\&K 2005 models do not support instances with utilities involved.
 
-
-
 \subsection{Uncertainty frameworks}
-\begin{table}[htbp]
+
+If the user elects to incorporate uncertainty in the instance, four types of uncertain variables are available:
+\begin{enumerate}
+\item Fixed processing time ($\alpha$)
+\item Fixed and variable processing time ($\alpha + \beta$)
+\item Task yield ($\rho_p$)
+\item Fixed processing time and task yield ($\alpha + \rho_p$)
+\end{enumerate}
+
+The availability of SRO and ARO frameworks for each of the sets of uncertain variables is shown in Table \ref{tab:adjvars}. If ARO is selected, the uncertain parameters selected dictate the availability of adjustable variables.
+
+\begin{table}[htb]
 \centering
 \caption{Uncertainty frameworks and  adjustable variables}
 \label{tab:adjvars}
@@ -250,12 +259,3 @@ $\rho_p$          & \xmark     & \checkmark & \xmark       & \checkmark  & \xmar
 $\alpha + \rho_p$ & \xmark     & \checkmark & \checkmark   & \checkmark  & \xmark      \\ \bottomrule
 \end{tabular}
 \end{table}
-If the user elects to incorporate uncertainty in the instance, four types of uncertain variables are available:
-\begin{enumerate}
-\item Fixed processing time ($\alpha$)
-\item Fixed and variable processing time ($\alpha + \beta$)
-\item Task yield ($\rho_p$)
-\item Fixed processing time and task yield ($\alpha + \rho_p$)
-\end{enumerate}
-
-The availability of SRO and ARO frameworks for each of the sets of uncertain variables is shown in Table \ref{tab:adjvars}. If ARO is selected, the uncertain parameters selected dictate the availability of adjustable variables.

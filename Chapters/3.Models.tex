@@ -100,17 +100,17 @@ This model, proposed by \cite{Gimenez} is a based on a continuous-time represent
 T_{n+1} - & T_n - H (1 - S_{jn}^I - S_{jn}^O - W_{jn}) \le \\  &\bar{T}_{jn}^S + \bar{T}_{jn}^W \le T_{n+1} - T_n  
 \end{aligned}&&\forall j, n < N \\
 &\begin{aligned}
-T_n \ge \sum_{1 < n' \le n} &\sum_{i \in \mathcal{I}_j} (a_{ij} Y_{ijn'} + b _{ij} B_{ijn'}^E) \\ &+ \sum_{1 < n' \le n} \bar{T}_{jn'}^{\text{EE}} + \sum_{n' < n} (\bar{T}_{jn'}^{\text{LB}} + \bar{T}_{jn'}^{\text{S}} + \bar{T}_{jn'}^{\text{W}})
+T_n \ge \sum_{1 < n' \le n} &\sum_{i \in \mathcal{I}_j} (\alpha_{ij} Y_{ijn'} + \beta_{ij} B_{ijn'}^E) \\ &+ \sum_{1 < n' \le n} \bar{T}_{jn'}^{\text{EE}} + \sum_{n' < n} (\bar{T}_{jn'}^{\text{LB}} + \bar{T}_{jn'}^{\text{S}} + \bar{T}_{jn'}^{\text{W}})
 \end{aligned} && \forall j, n > 1 \\
 &\begin{aligned}
-H - T_n \ge &\sum_{1 < n' \le n} \sum_{i \in \mathcal{I}_j} (a_{ij} X_{ijn'} + b _{ij} B_{ijn'}^S) \\ &+ \sum_{n' \ge n} \bar{T}_{jn'}^{\text{EE}} + \sum_{n \le n' < N} (\bar{T}_{jn'}^{\text{LB}} + \bar{T}_{jn'}^{\text{S}} + \bar{T}_{jn'}^{\text{W}})
+H - T_n \ge &\sum_{1 < n' \le n} \sum_{i \in \mathcal{I}_j} (\alpha_{ij} X_{ijn'} + \beta_{ij} B_{ijn'}^S) \\ &+ \sum_{n' \ge n} \bar{T}_{jn'}^{\text{EE}} + \sum_{n \le n' < N} (\bar{T}_{jn'}^{\text{LB}} + \bar{T}_{jn'}^{\text{S}} + \bar{T}_{jn'}^{\text{W}})
 \end{aligned}  && \forall j, n > 1 \\
 &\begin{aligned}
-\sum_{n > 1} \bar{T}_{jn}^{\text{EE}} &+ \sum_{n<N}(\bar{T}_{jn}^\text{LB} + \bar{T}_{jn}^{\text{S}} + \bar{T}_{jn}^\text{W}) \\ &+\sum_{n>1} \sum_{i \in \mathcal{I}_j} (a_{ij} Y _{ijn} + b_{ij} B_{ijn}^\text{E}) = H
+\sum_{n > 1} \bar{T}_{jn}^{\text{EE}} &+ \sum_{n<N}(\bar{T}_{jn}^\text{LB} + \bar{T}_{jn}^{\text{S}} + \bar{T}_{jn}^\text{W}) \\ &+\sum_{n>1} \sum_{i \in \mathcal{I}_j} (\alpha_{ij} Y _{ijn} + \beta_{ij} B_{ijn}^\text{E}) = H
 \end{aligned} && \forall j \\
 	& \beta_{ij}^\text{MIN} Y_{ijn} \le B_{ijn}^E  \le \beta_{ij}^\text{MAX} Y_{ijn} && \forall i, j \in \mathcal{J}_i, n > 1 \\
-	& B_{ijn}^{\text{S}} \le \beta_{ij}^{\text{MAX}} X_{ijn} && \forall i, j \in \mathcal{J}_i, n < N \\
-	& \sum_{i \in \mathcal{I}_j} B_{ijn}^{\text{P}} \le \max_{i \in \mathcal{I}_j} \{ \beta_{ij}^{\text{MAX}}\} Z_{jn} && \forall j, n \\
+	& B_{ijn}^{\text{S}} \le B_{ij}^{\text{MAX}} X_{ijn} && \forall i, j \in \mathcal{J}_i, n < N \\
+	& \sum_{i \in \mathcal{I}_j} B_{ijn}^{\text{P}} \le \max_{i \in \mathcal{I}_j} \{ B_{ij}^{\text{MAX}}\} Z_{jn} && \forall j, n \\
 	& B_{ijn}^\text{S} + B_{ijn}^\text{P} = B_{ij(n+1)}^\text{P} B_{ij(n+1)}^\text{E} && \forall i, j \in \mathcal{J}_i, n < N \\
 &\begin{aligned}
 I_{mkn}^S &= I_{mk(n-1)}^S - \sum_{j \in \mathcal{J}_k} F_{mkjn}^{\text{VU}} - \sum_{k' \in \mathcal{K}_k} F_{mkk'n}^{\text{VV}}   \\ &+ \sum_{j \in \mathcal{J}_k} F_{mjkn}^{\text{UV}} + \sum_{k' \in \mathcal{K}_k} F_{mk'kn}^{\text{VV}} \\
@@ -120,13 +120,13 @@ I_{mkn}^S &= I_{mk(n-1)}^S - \sum_{j \in \mathcal{J}_k} F_{mkjn}^{\text{VU}} - \
 &\begin{aligned}
 I_{mjn}^\text{I} = &I_{mj(n-1)}^{\text{I}} + \sum_{k \in (\mathcal{K}_j \cap \mathcal{K}_m)} F_{mkjn}^{\text{VU}}  \\ &+  \sum_{j' \in \mathcal{J}_j} F_{mj'jn}^{\text{UU}} + \sum_{i \in (\mathcal{I}_j \cap \mathcal{I}_m^C)} \sum \rho_{im} B_{ijn}^\text{S}
 \end{aligned} && \forall m, j, n \\
-& \sum_{m \in \mathcal{M}} I^{\text{I}}_{mjn} \le \max_i \{\beta_{i,j}^{\text{MAX}} S_{jn}^{\text{I}} \} && \forall j, n < N \\
+& \sum_{m \in \mathcal{M}} I^{\text{I}}_{mjn} \le \max_i \{B_{i,j}^{\text{MAX}} S_{jn}^{\text{I}} \} && \forall j, n < N \\
 &\begin{aligned}
 I_{mjn}^\text{O} &= I_{mj(n-1)}^\text{O} + \sum_{i \in (\mathcal{I}_j \cap \mathcal{I}_m^p)} \rho_{im} B_{ijn}^\text{E}  \\ &- \sum_{k \in (\mathcal{K}_j \cap \mathcal{K}_m)} F^{UV}_{mjkn} - \sum_{j' \in \mathcal{J}_j} F^{UU}_{mjj'n}
 \end{aligned}  &&\forall m, j , n > 1 \\
-&\sum_{m \ in \mathcal{M}} I_{mjn}^\text{O} \le \max_i \{\beta_{ij}^{\text{MAX}}\} S_{jn}^\text{O} && \forall j, n < N \\
+&\sum_{m \ in \mathcal{M}} I_{mjn}^\text{O} \le \max_i \{B_{ij}^{\text{MAX}}\} S_{jn}^\text{O} && \forall j, n < N \\
 &\begin{aligned}
-Q_{rn} &= Q_{r(n-1)} +\\ &\sum_{i \in \mathcal{I}_r} \sum_{j \in \mathcal{J}_i} [\gamma_{ijr} (X_{ijn} - Y_{ijn}) + g_{ijr} (B_{ijn}^S - B_{ijn}^E)] 
+Q_{rn} &= Q_{r(n-1)} +\\ &\sum_{i \in \mathcal{I}_r} \sum_{j \in \mathcal{J}_i} [\gamma_{ijr} (X_{ijn} - Y_{ijn}) + \delta_{ijr} (B_{ijn}^S - B_{ijn}^E)] 
 \end{aligned}&& \forall r, n \\
 &Q_{rn} \le \rho_r^\text{MAX} &&\forall r, n \\
 &\sum_{j \in \mathcal{K}_m} I_{mkn}^\text{S} \ge d_m &&\forall n \in \mathcal{M}^S, n = N
