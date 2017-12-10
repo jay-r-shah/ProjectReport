@@ -110,7 +110,7 @@ For this case, we will consider the case of maximization of profit. After succes
 Once the instance is complete, the submit button in the control panel will be activated. Clicking the ``Submit'' button will display the model selection table as shown in Fig. \ref{fig:selectModel}. For the deterministic version, the five models described in Chapter \ref{chap:models} are available. The CBMN 2004 model is selected by default. 
 
 \subsection{Number of event points}
-
+\label{subsec:eventpoints}
 Continuous-time formulations for short-term scheduling are based on a set of time points (unit specific or global), which are non-uniformly distributed along the scheduling horizon. A limitation of these approaches is that the number of time points required to represent the optimal schedule is unknown a priori, so multiple MILP models need to be solved to reach the optimal solution. A suitable strategy is to start by adopting a small number of event points and gradually increase this number and repeatedly solve the model until the objective values does not show an improvement. For this particular instance, 5 event points result in the optimal schedule. Clicking the ``Submit'' on this page will add the instance to the processing queue.
 
 \section{Results}
@@ -142,7 +142,37 @@ In addition, we also consider one general affine correlation to postulate an upp
 \item \textbf{High:} $\xi = 0.3$ , $\phi = 1.0$
 \end{enumerate}
 
+For the case of static robust optimization, a ``worst-case'' maximum profit objective value of 1312.45 is obtained. For adjustable robust optimization, the corresponding value is 1355.68. Although both of these solutions are worse than the deterministic case, ARO provides an improved solution as compared to SRO. In this case, we have considered a ``Low'' uncertainty level. For the ARO case, timing, batch size and state level variables were considered to be adjustable. The nominal realization Gantt charts are shown in Fig. \ref{fig:GanttSRO} and \ref{fig:GanttARO}. The number of event points for each case was determined using the procedure described in \ref{subsec:eventpoints}. 
 
 
-\subsection{Static robust optimization}
+\begin{figure}[htb]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+\includegraphics[width=\textwidth]{Images/SRO_Gantt.png}
+    \caption{SRO for low uncertainty in fixed processing time (n = 5)}
+\label{fig:GanttSRO}
+  \end{minipage}
+\hfill
+  \begin{minipage}[b]{0.49\textwidth}
+\includegraphics[width=\textwidth]{Images/ARO_Gantt.png}
+    \caption{ARO for low uncertainty in fixed processing time (n = 6)}
+    \label{fig:GanttARO}
+  \end{minipage}
+\end{figure}
+
+
+It is seen that both the robust optimization models are significantly larger than the deterministic models (Table \ref{tab:modelsize}), consequently, they are harder to solve. The ARO problem can only be solved to 0.14\% optimality gap within the one hour time limit. For both these cases, the CBMN 2004 model was used.
+
+\begin{table}[htb]
+\centering
+\caption{Model size comparision}
+\label{tab:modelsize}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+                            & \textbf{Deterministic} & \textbf{SRO} & \textbf{ARO} \\ \midrule
+No. of constraints          & 150                    & 4,670         & 118,579       \\
+No. of binary variables     & 56                     & 96           & 144          \\
+No. of continuous variables & 122                    & 9,194         & 218,188       \\ \bottomrule
+\end{tabular}
+\end{table}
 

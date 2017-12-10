@@ -399,7 +399,7 @@
 {
 % Latest Logo, Square version (the default!)
 % you need an oxlogo.eps or oxlogo.pdf file as appropriate
-\def\logo{{\includegraphics[width=50mm]{ICT_Logo.png}}}
+\def\logo{{\includegraphics[width=50mm]{CMU_Logo.png}}}
 }{}
 
 %
@@ -1116,10 +1116,8 @@
 \fi
 \def\submittedtexta{
 \if@Seminar
-A SEMINAR REPORT SUBMITTED TO \\ THE INSTITUTE OF CHEMICAL TECHNOLOGY
 \fi
 \if@HomePaper
-A HOME PAPER SUBMITTED TO \\ THE INSTITUTE OF CHEMICAL TECHNOLOGY
 \fi
 }
 \def\submittedtextb{
@@ -1127,9 +1125,7 @@ A HOME PAPER SUBMITTED TO \\ THE INSTITUTE OF CHEMICAL TECHNOLOGY
 \vspace*{1ex} BY
 \fi
 \if@HomePaper
-IN PARTIAL FULFILLMENT OF THE \\
-REQUIREMENTS FOR THE DEGREE OF \\ 
-\textbf{\MakeUppercase{\@degree}} \\ \vspace*{1ex} BY
+\textbf{\MakeUppercase{\@degree}} \\ \vspace*{1ex}
 \fi
 }
 \def\contentsname{Contents}

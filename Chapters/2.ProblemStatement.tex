@@ -1,7 +1,28 @@
 \chapter{Problem Statement}
 \thispagestyle{plain}
 
-
+The scheduling problem of chemical processes is defined as follows. Given
+\begin{enumerate}[label=\roman*.]
+\item production recipes (i.e. the processing times for each task at the suitable units, and the amount of the materials required for the production of each product)
+\item available equipment and their maximum capacities
+\item material storage limitations
+\item production requirement
+\item time horizon under consideration,
+\end{enumerate}
+determine
+\begin{enumerate}[label=\roman*.]
+\item the optimal sequence of tasks taking place in each unit
+\item the amount of material being processes at each time in each unit
+\item the processing time of each task in each unit
+\end{enumerate}
+so as to minimize the makespan or maximize the overall profit. \\
+There may be sources of uncertainty in the scheduling problem such as:
+\begin{enumerate}[label=\roman*.]
+\item the processing times of tasks
+\item the task yields
+\item market demands
+\end{enumerate}
+The following notation is defined: \\
 \textbf{Indices} \\
 $i$ = tasks \\
 $j$ = units  \\
@@ -32,5 +53,5 @@ $D_s = $ Demand of state $s$ at the end of horizon \\
 $P_s = $ Price of state $s$ \\
 $H = $ Horizon
 
-Given the above data for units, states, utilities, tasks, horizon and demands, a feasible schedule has to be obtained in order to either maximize profit within horizon $H$ or minimize the time taken to produce demands $D_s$ for states $s$.
+
 

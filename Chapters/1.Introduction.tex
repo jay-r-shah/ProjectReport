@@ -25,7 +25,7 @@ There has been significant development of optimization approaches to scheduling 
 Such a mathematical programming approach for the scheduling of multi-purpose, multi-product batch plants was proposed by \cite{KONDILI1993211}. The main limitation of this approach resulted from the fact that the duration of all processing tasks must be a multiple of the discretization time, which implied a formulation with a high number of decision variables for reasonable accuracy for realistic applications.
 \cite{SHAH1993229} developed specific solution techniques for the proposed formulation so as to reduce the computational time. However, the discretization problem was still present. This encouraged work towards the development of efficient methods based on continuous-time representations, which was first introduced for scheduling problems by \cite{SAHINIDIS199185}.
 
-Subsequently, several continuous time models for the scheduling of batch plants were developed over the next two decades. We describe five of them in Chapter \ref{chap:models}:
+Subsequently, several continuous time models for the scheduling of batch plants were developed over the next two decades. Five of them are described in Chapter \ref{chap:models}:
 \begin{enumerate}
 \item \cite{Castro}
 \item \cite{Maravelias}
@@ -45,3 +45,6 @@ This work supports two frameworks to handle uncertainty of parameters:
 \item \textbf{Adjustable Robust Optimization: } SRO approaches are generally conservative, as they assume that all of the decisions have to be made 	``here-and-now'', before the schedule begins to be implemented. In reality, many of the decisions can be ``wait-and-see'', meaning that they can be delayed until a later point when the a subset of the uncertain parameters have revealed their values. To handle such multi-stage decision making strategies, Adjustable Robust Optimization (ARO) is used, where an optimal policy is derived instead of a single, static solution. The optimal policy constitutes a family of solutions that are parameterized in the uncertain parameter realizations \citep{lappas}.
 
 \end{itemize}
+
+
+This report describes the design and usage of an online webtool built to illustrate the procedure of building a scheduling instance and obtaining/interpreting results. The tool can be accessed online at \url{gounaris.cheme.cmu.edu/CMUPSO}. For instances involving uncertain parameters, \url{gounaris.cheme.cmu.edu/webtool6.0} should be used.

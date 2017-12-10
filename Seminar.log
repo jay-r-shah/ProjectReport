@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.10)  6 DEC 2017 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.10)  8 DEC 2017 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -182,6 +182,10 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
+(c:/texlive/2016/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks15
+)
 (c:/texlive/2016/texmf-dist/tex/latex/layouts/layouts.sty
 Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@ylen=\skip55
@@ -204,7 +208,7 @@ Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@yptsep=\skip71
 \l@ypsep=\skip72
 \l@yitmsep=\skip73
-\l@ytok=\toks15
+\l@ytok=\toks16
 \l@youtpw=\count92
 \l@youtph=\count93
 \l@youthpi=\count94
@@ -337,13 +341,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen110
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
-\Gm@dimlist=\toks16
+\Gm@dimlist=\toks17
 )
 (c:/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip81
 \enit@outerparindent=\dimen113
-\enit@toks=\toks17
+\enit@toks=\toks18
 \enit@inbox=\box27
 \enitdp@description=\count145
 )
@@ -360,7 +364,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
+\@emptytoks=\toks19
 \ex@=\dimen114
 ))
 (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -390,21 +394,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \dotsspace@=\muskip10
 \c@parentequation=\count153
 \dspbrk@lvl=\count154
-\tag@help=\toks19
+\tag@help=\toks20
 \row@=\count155
 \column@=\count156
 \maxfields@=\count157
-\andhelp@=\toks20
+\andhelp@=\toks21
 \eqnshift@=\dimen117
 \alignsep@=\dimen118
 \tagshift@=\dimen119
 \tagwidth@=\dimen120
 \totwidth@=\dimen121
 \lineht@=\dimen122
-\@envbody=\toks21
+\@envbody=\toks22
 \multlinegap=\skip83
 \multlinetaggap=\skip84
-\mathdisplay@stack=\toks22
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
@@ -434,7 +438,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks23
+\pgfutil@everybye=\toks24
 \pgfutil@tempdima=\dimen123
 \pgfutil@tempdimb=\dimen124
 
@@ -456,11 +460,11 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks24
-\pgfkeys@temptoks=\toks25
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
 
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks26
+\pgfkeys@tmptoks=\toks27
 ))
 \pgf@x=\dimen125
 \pgf@y=\dimen126
@@ -476,9 +480,9 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \c@pgf@countb=\count159
 \c@pgf@countc=\count160
 \c@pgf@countd=\count161
-\t@pgf@toka=\toks27
-\t@pgf@tokb=\toks28
-\t@pgf@tokc=\toks29
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
  (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -507,9 +511,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@dimen=\dimen133
 \pgfmath@count=\count164
 \pgfmath@box=\box31
-\pgfmath@toks=\toks30
-\pgfmath@stack@operand=\toks31
-\pgfmath@stack@operation=\toks32
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
 )
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
@@ -642,8 +646,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen160
 \pgffor@skip=\dimen161
-\pgffor@stack=\toks33
-\pgffor@toks=\toks34
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
 ))
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -833,9 +837,9 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 (c:/texlive/2016/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count199
-\float@exts=\toks35
+\float@exts=\toks36
 \float@box=\box41
-\@float@everytoks=\toks36
+\@float@everytoks=\toks37
 \@floatcapt=\box42
 )
 (c:/texlive/2016/texmf-dist/tex/latex/nomencl/nomencl.sty
@@ -875,15 +879,15 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box43
-\AM@global@opts=\toks37
-\AM@toc@title=\toks38
+\AM@global@opts=\toks38
+\AM@toc@title=\toks39
 \c@AM@survey=\count269
 \AM@templatesizebox=\box44
 )
 (c:/texlive/2016/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count270
 \lst@gtempboxa=\box45
-\lst@token=\toks39
+\lst@token=\toks40
 \lst@length=\count271
 \lst@currlwidth=\dimen256
 \lst@column=\count272
@@ -920,7 +924,7 @@ Package: rotating 2016/05/22 v2.16c rotated objects in LaTeX
 \rotFPtop=\skip95
 \rotFPbot=\skip96
 \rot@float@box=\box47
-\rot@mess@toks=\toks40
+\rot@mess@toks=\toks41
 )
 (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -1223,26 +1227,26 @@ LaTeX Warning: Label `fig:selectModel' multiply defined.
 )
 \openout1 = `Seminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 83.
  (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1251,15 +1255,15 @@ LaTeX Font Info:    ... okay on input line 82.
 \scratchbox=\box64
 \nofMPsegments=\count359
 \nofMParguments=\count360
-\everyMPshowfont=\toks41
+\everyMPshowfont=\toks42
 \MPscratchCnt=\count361
 \MPscratchDim=\dimen297
 \MPnumerator=\count362
 \makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks42
+\everyMPtoPDFconversion=\toks43
 )
 
-Package layouts Warning: Layout scale set to 0.5 on input line 82.
+Package layouts Warning: Layout scale set to 0.5 on input line 83.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1309,7 +1313,7 @@ Package caption Info: End \AtBeginDocument code.
 Package hyperref Warning: Height of page (\stockheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring OFF on input line 82.
+Package hyperref Info: Link coloring OFF on input line 83.
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1318,9 +1322,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count364
 )
-LaTeX Info: Redefining \ref on input line 82.
-LaTeX Info: Redefining \pageref on input line 82.
-LaTeX Info: Redefining \nameref on input line 82.
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
 
 (./Seminar.out) (./Seminar.out)
 \@outlinefile=\write5
@@ -1330,9 +1334,26 @@ LaTeX Info: Redefining \nameref on input line 82.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 82.
+. Activating mapping `default' on line 83.
 .................................................
- (./Seminar.toc
+ <CMU_Logo.png, id=103, 602.25pt x 602.25pt>
+File: CMU_Logo.png Graphic file (type png)
+
+<use CMU_Logo.png>
+Package pdftex.def Info: CMU_Logo.png used on input line 85.
+(pdftex.def)             Requested size: 142.26378pt x 142.26393pt.
+ [1
+
+
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./CMU_Logo.png>
+]pdfTeX warning (ext4): destination with the same identifier (name{page.Cover})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 \frontmatter
+                  [2
+
+] (./Seminar.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1348,22 +1369,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-
-
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Seminar.lof)
+] (./Seminar.lof)
 \tf@lof=\write7
 \openout7 = `Seminar.lof'.
 
- (./Seminar.lot)
+
+(./Seminar.lot)
 \tf@lot=\write8
 \openout8 = `Seminar.lot'.
 
-
-[2
+ [2
 
 ] (./Chapters/1.Introduction.tex
 Chapter 1.
-<Images/RTN.jpg, id=191, 358.93294pt x 184.90485pt>
+<Images/RTN.jpg, id=206, 358.93294pt x 184.90485pt>
 File: Images/RTN.jpg Graphic file (type jpg)
  <use Images/RTN.jpg>
 Package pdftex.def Info: Images/RTN.jpg used on input line 19.
@@ -1391,21 +1410,24 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Chapter 2.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4
-
-])
-(./Chapters/3.Models.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[4]
+Chapter 2.
+[5
+
+]) (./Chapters/3.Models.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
 Chapter 3.
 
 Overfull \hbox (51.46742pt too wide) in paragraph at lines 38--38
@@ -1415,7 +1437,7 @@ Overfull \hbox (51.46742pt too wide) in paragraph at lines 38--38
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6
+ [7
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1427,7 +1449,7 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1437,19 +1459,7 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
-
-Package Fancyhdr Warning: \headheight is too small (12.5pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [9]
-Overfull \hbox (3.31187pt too wide) in paragraph at lines 133--133
-[] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1460,6 +1470,11 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
+Overfull \hbox (3.31187pt too wide) in paragraph at lines 135--135
+[] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1489,7 +1504,10 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]) (./Chapters/4.GUIDesign.tex
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
@@ -1497,6 +1515,23 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]) (./Chapters/4.GUIDesign.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
 Chapter 4.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
 (c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
@@ -1510,7 +1545,7 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
- [15
+ [17
 
 ]
 
@@ -1519,11 +1554,11 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[18]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
- <Images/Communication.png, id=493, 813.7602pt x 283.7802pt>
+ <Images/Communication.png, id=536, 813.7602pt x 283.7802pt>
 File: Images/Communication.png Graphic file (type png)
 
 <use Images/Communication.png>
@@ -1536,7 +1571,7 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17] <Images/ParameterObjectiveInput.png, id=535, 780.516pt x 132.9768pt>
+[19] <Images/ParameterObjectiveInput.png, id=576, 780.516pt x 132.9768pt>
 File: Images/ParameterObjectiveInput.png Graphic file (type png)
 
 <use Images/ParameterObjectiveInput.png>
@@ -1550,8 +1585,8 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./Images/Communication.png> <./Images/ParameterObjectiveInput.png>]
-<Images/GUIDesign.png, id=543, 723.6636pt x 332.442pt>
+[20 <./Images/Communication.png> <./Images/ParameterObjectiveInput.png>]
+<Images/GUIDesign.png, id=583, 723.6636pt x 332.442pt>
 File: Images/GUIDesign.png Graphic file (type png)
 
 <use Images/GUIDesign.png>
@@ -1564,7 +1599,7 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19] <Images/SelectModelUtilities.png, id=551, 501.875pt x 315.1775pt>
+[21] <Images/SelectModelUtilities.png, id=592, 501.875pt x 315.1775pt>
 File: Images/SelectModelUtilities.png Graphic file (type png)
 
 <use Images/SelectModelUtilities.png>
@@ -1578,16 +1613,16 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./Images/GUIDesign.png>]) (./Chapters/5.CaseStudy.tex
+[22 <./Images/GUIDesign.png>]) (./Chapters/5.CaseStudy.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21 <./Images/SelectModelUtilities.png>]
+[23 <./Images/SelectModelUtilities.png>]
 Chapter 5.
-<Images/STN.png, id=574, 947.79094pt x 488.57532pt>
+<Images/STN.png, id=615, 947.79094pt x 488.57532pt>
 File: Images/STN.png Graphic file (type png)
  <use Images/STN.png>
 Package pdftex.def Info: Images/STN.png used on input line 9.
@@ -1597,14 +1632,14 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
-<Images/DefineUnits.png, id=577, 702.625pt x 331.2375pt>
+<Images/DefineUnits.png, id=618, 702.625pt x 331.2375pt>
 File: Images/DefineUnits.png Graphic file (type png)
 
 <use Images/DefineUnits.png>
 Package pdftex.def Info: Images/DefineUnits.png used on input line 56.
 (pdftex.def)             Requested size: 452.9679pt x 213.54797pt.
 
-<Images/DefineStates.png, id=580, 923.45pt x 545.03625pt>
+<Images/DefineStates.png, id=621, 923.45pt x 545.03625pt>
 File: Images/DefineStates.png Graphic file (type png)
 
 <use Images/DefineStates.png>
@@ -1613,7 +1648,7 @@ Package pdftex.def Info: Images/DefineStates.png used on input line 65.
 
 Underfull \vbox (badness 2343) has occurred while \output is active []
 
- [22
+ [24
 
  <./Images/STN.png>]
 
@@ -1622,15 +1657,15 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <./Images/DefineUnits.png> <./Images/DefineStates.png>]
-<Images/DefineTasks.png, id=595, 1003.75pt x 663.47874pt>
+[25 <./Images/DefineUnits.png> <./Images/DefineStates.png>]
+<Images/DefineTasks.png, id=636, 1003.75pt x 663.47874pt>
 File: Images/DefineTasks.png Graphic file (type png)
 
 <use Images/DefineTasks.png>
 Package pdftex.def Info: Images/DefineTasks.png used on input line 75.
 (pdftex.def)             Requested size: 452.9679pt x 299.41307pt.
 
-<Images/DefineObjective.png, id=598, 501.875pt x 170.6375pt>
+<Images/DefineObjective.png, id=639, 501.875pt x 170.6375pt>
 File: Images/DefineObjective.png Graphic file (type png)
 
 <use Images/DefineObjective.png>
@@ -1643,28 +1678,28 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
+[26]
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./Images/DefineTasks.png> <./Images/DefineObjective.png>]
-<Images/Prices.png, id=615, 502.87875pt x 823.075pt>
+[27 <./Images/DefineTasks.png> <./Images/DefineObjective.png>]
+<Images/Prices.png, id=657, 502.87875pt x 823.075pt>
 File: Images/Prices.png Graphic file (type png)
  <use Images/Prices.png>
 Package pdftex.def Info: Images/Prices.png used on input line 96.
 (pdftex.def)             Requested size: 362.37569pt x 593.10335pt.
 
-<Images/SelectModel.png, id=616, 501.875pt x 315.1775pt>
+<Images/SelectModel.png, id=658, 501.875pt x 315.1775pt>
 File: Images/SelectModel.png Graphic file (type png)
 
 <use Images/SelectModel.png>
 Package pdftex.def Info: Images/SelectModel.png used on input line 105.
 (pdftex.def)             Requested size: 362.37569pt x 227.58168pt.
 
-<Images/Results.png, id=619, 801.99625pt x 748.7975pt>
+<Images/Results.png, id=661, 801.99625pt x 748.7975pt>
 File: Images/Results.png Graphic file (type png)
 
 <use Images/Results.png>
@@ -1680,44 +1715,41 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
+[28]
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./Images/Prices.png>])
+[29 <./Images/Prices.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./Images/SelectModel.png>]
+[30 <./Images/SelectModel.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./Images/Results.png>]
-No file Seminar.nls.
-(./Seminar.bbl
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ³ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no © in font cmr12!
- [30
+[31 <./Images/Results.png>]
+<Images/SRO_Gantt.png, id=689, 726.5544pt x 338.9463pt>
+File: Images/SRO_Gantt.png Graphic file (type png)
 
+<use Images/SRO_Gantt.png>
+Package pdftex.def Info: Images/SRO_Gantt.png used on input line 151.
+(pdftex.def)             Requested size: 221.95676pt x 103.54138pt.
 
-]
-Missing character: There is no â in font cmr12!
-Missing character: There is no ˆ in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ” in font cmr12!
+<Images/ARO_Gantt.png, id=690, 726.5544pt x 338.9463pt>
+File: Images/ARO_Gantt.png Graphic file (type png)
+
+<use Images/ARO_Gantt.png>
+Package pdftex.def Info: Images/ARO_Gantt.png used on input line 157.
+(pdftex.def)             Requested size: 221.95676pt x 103.54138pt.
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.5pt): 
@@ -1725,30 +1757,48 @@ Package Fancyhdr Warning: \headheight is too small (12.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+[32 <./Images/SRO_Gantt.png> <./Images/ARO_Gantt.png>] (./Seminar.bbl
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ³ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+ [33
+
+]
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.5pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./Seminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `Seminar.out' has not changed.
-(rerunfilecheck)             Checksum: 22471A3FD6647C3F83CFC16331D81A95;1407.
+(rerunfilecheck)             Checksum: 1FFEF55F8A2564FA779330C38CC72180;1407.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 98 (\begingroup)
+### semi simple group (level 1) entered at line 100 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31517 strings out of 493013
- 583293 string characters out of 6136993
- 799295 words of memory out of 5000000
- 34227 multiletter control sequences out of 15000+600000
- 13837 words of font info for 52 fonts, out of 8000000 for 9000
+ 31578 strings out of 493013
+ 584197 string characters out of 6136993
+ 799897 words of memory out of 5000000
+ 34264 multiletter control sequences out of 15000+600000
+ 14443 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,20n,54p,10372b,1336s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
@@ -1758,20 +1808,21 @@ Here is how much of TeX's memory you used:
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtt10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmtt12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
-10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Seminar.pdf (33 pages, 869679 bytes).
+onts/cm/cmr17.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:
+/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Seminar.pdf (38 pages, 1215131 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
- 697 compressed objects within 7 object streams
- 301 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 843 PDF objects out of 1000 (max. 8388607)
+ 745 compressed objects within 8 object streams
+ 321 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

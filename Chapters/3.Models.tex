@@ -80,7 +80,8 @@ This model, described by \cite{Maravelias} is a Global Event-Based Model using S
 		  &B_{isn}^O = \rho_{is} Bf_{in} && \forall i \in \mathcal{I}_{s}^p, \forall n, \forall s \\
 		  &B_{isn}^O \le B_{i}^{max} \rho_{is} Wf_{in}  && \forall i \in \mathcal{I}_{s}^p, \forall n, \forall s \\
 		  &U_{iun}^{I} = \gamma_{iu} Ws_{in} + \delta_{iu} Bs_{in} && \forall i, \forall u, \forall n \\
-		  &U_{iun}^{O} = \gamma_{iu} Wf_{in} + \delta_{iu} Bf_{in} && \forall i, \forall u, \forall n
+		  &U_{iun}^{O} = \gamma_{iu} Wf_{in} + \delta_{iu} Bf_{in} && \forall i, \forall u, \forall n \\
+		  &Ws_{in}, Wp_{in}, Wf_{in} \in \{0,1\}
 \end{align}
 
 \section{GHM 2009}
@@ -129,7 +130,8 @@ I_{mjn}^\text{O} &= I_{mj(n-1)}^\text{O} + \sum_{i \in (\mathcal{I}_j \cap \math
 Q_{rn} &= Q_{r(n-1)} +\\ &\sum_{i \in \mathcal{I}_r} \sum_{j \in \mathcal{J}_i} [\gamma_{ijr} (X_{ijn} - Y_{ijn}) + \delta_{ijr} (B_{ijn}^S - B_{ijn}^E)] 
 \end{aligned}&& \forall r, n \\
 &Q_{rn} \le \rho_r^\text{MAX} &&\forall r, n \\
-&\sum_{j \in \mathcal{K}_m} I_{mkn}^\text{S} \ge d_m &&\forall n \in \mathcal{M}^S, n = N
+&\sum_{j \in \mathcal{K}_m} I_{mkn}^\text{S} \ge d_m &&\forall n \in \mathcal{M}^S, n = N \\
+&X_{ijn}, Y_{ijn}, E_{jn}, S_{jn}^I/S_{jn}^O, W_{jn} \in \{0,1\}
 \end{align}
 
 \section{I\&F 1998}
@@ -152,7 +154,8 @@ This model \citep{Ierapetritou} was the first introduction of the concept of eve
 		     & T_{ij(n+1)}^s \ge \sum_{n' \in \mathcal{N}, n' \le \mathcal{N}} \sum_{i' \in \mathcal{I}_j} (T_{i'jn'}^f - T_{i'jn'}^s) &&\forall i \in \mathcal{I}, \forall j \in \mathcal{J}_i, \\ 
 		     & &&\forall n \in \mathcal{N}, n \ne \mathcal{N} \nonumber \\
 		     & T_{ijn}^f \le H && i \in \mathcal{I}, \forall j \in \mathcal{J}_i, n \in \mathcal{N} \\
-		     & T_{ijn}^s \le H &&  i \in \mathcal{I}, \forall j \in \mathcal{J}_i, n \in \mathcal{N}
+		     & T_{ijn}^s \le H &&  i \in \mathcal{I}, \forall j \in \mathcal{J}_i, n \in \mathcal{N} \\
+		     &W_{in}, G_{jn} \in \{0,1\}
 \end{align}
 
 \section{S\&K 2005}
@@ -179,5 +182,6 @@ This model \citep{Karimi} considers a synchronous slot-based time representation
 		  & SL_n \le \max_j \left[\max_{i \in \mathcal{I}_j} (\alpha_i + \beta_i B_{i}^{max}) \right] && \forall n \\
 		  & t_{jn} \le \max_{j \in \mathcal{J}_i} (\alpha_i + \beta_i B_{i}^{max}) && \forall j \in \mathcal{J}, \forall n \\
 		  & S_{sn} \le S_{s}^{max} && \forall s \in \mathcal{S} , \forall n \\
-		  & Bp_{in}, Bs_{in}, Bf_{in} \le B_{i}^{max} && \forall i \in \mathcal{I}, \forall n
+		  & Bp_{in}, Bs_{in}, Bf_{in} \le B_{i}^{max} && \forall i \in \mathcal{I}, \forall n \\
+		  & Ws_{in}, Wp_{in}, Wf_{in}, G_{jn} \in \{0,1\}
 \end{align}
